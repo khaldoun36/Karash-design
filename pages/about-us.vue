@@ -8,7 +8,7 @@
             We build your dream interior
         </h1>
         <NuxtImg
-            src="./images/about-us-header.jpg"
+            src="/images/about-us-header.jpg"
             alt="Primary background image"
             class="full-width absolute left-2/4 top-2/4 -z-10 min-h-full min-w-full brightness-50"
             preload="high"
