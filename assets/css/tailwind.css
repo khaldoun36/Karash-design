@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ****** */
+/*  Font  */
+/* ****** */
+
+@font-face {
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('public/font/InterVariable.woff2') format('woff2');
+}
+@font-face {
+    font-family: InterVariable;
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('public/font/InterVariable.woff2') format('woff2');
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+    color-scheme: dark;
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'InterVariable', sans-serif;
+        font-optical-sizing: auto;
+    }
+}
+
+/* ******* */
+/* Wrapper */
+/* ******* */
+
+/* Mobile */
+.content-grid {
+    display: grid;
+    grid-template-columns:
+        [full-width-start] theme('spacing.4')
+        [content-start] 1fr [content-end]
+        theme('spacing.4') [full-width-end];
+}
+
+.content-grid > * {
+    grid-column: content;
+}
+
+.content-grid > .full-width {
+    grid-column: full-width;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .content-grid {
+        display: grid;
+        grid-template-columns:
+            [full-width-start] theme('spacing.8')
+            [content-start] 1fr [content-end]
+            theme('spacing.8') [full-width-end];
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .content-grid {
+        display: grid;
+        grid-template-columns:
+            [full-width-start] 1fr
+            [content-start] repeat(12, minmax(0, 4.5rem)) [content-end]
+            1fr [full-width-end];
+        column-gap: theme('spacing.8');
+    }
+}
+
+body {
+    background-color: theme('colors.secondary.900');
+}
+
+/* *************** */
+/* Utility classes */
+/* *************** */
+

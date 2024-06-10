@@ -1,0 +1,7 @@
+[
+    { "slug": "/", "text": "Home" },
+    { "slug": "/", "text": "Projects" },
+    { "slug": "/", "text": "Products and services" },
+    { "slug": "/about-us", "text": "About us" },
+    { "slug": "/after-sale", "text": "After sale" }
+]

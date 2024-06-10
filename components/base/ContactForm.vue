@@ -1,0 +1,72 @@
+<template>
+    <section
+        class="contact-form grid items-center justify-center pt-20 lg:pt-28"
+    >
+        <div
+            class="contact-details-container grid gap-8 self-end md:grid-cols-2 xl:col-start-2 xl:row-start-1 xl:grid-cols-1 xl:pl-28"
+        >
+            <div class="contact-details flex flex-col gap-2.5">
+                <h2
+                    class="mb-1.5 text-base font-semibold text-secondary-50 lg:text-lg"
+                >
+                    Direct Contact
+                </h2>
+                <NuxtLink
+                    to="mailto:mainbranch@karash.com"
+                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                >
+                    <span class="font-normal text-secondary-400">Email:</span>
+                    mainbranch@karash.com
+                </NuxtLink>
+                <NuxtLink
+                    to="tel:009647503520001"
+                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                >
+                    <span class="font-normal text-secondary-400">Phone:</span>
+                    +964 750 352 0001
+                </NuxtLink>
+                <NuxtLink
+                    to="tel:+9647504453841"
+                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                >
+                    <span class="font-normal text-secondary-400">Phone:</span>
+                    +964 750 445 3841
+                </NuxtLink>
+            </div>
+            <div class="dministrative-hours flex flex-col gap-2.5">
+                <h2
+                    class="mb-1.5 text-base font-semibold text-secondary-50 lg:text-lg"
+                >
+                    Administrative Hours
+                </h2>
+                <p class="text-base font-medium text-secondary-50 lg:text-lg">
+                    <span class="font-normal text-secondary-400"
+                        >Saturday to Thursday:</span
+                    >
+                    9AM – 6PM
+                </p>
+            </div>
+        </div>
+        <Form :messagePlaceHolder="messagePlaceHolder" />
+    </section>
+</template>
+
+<script setup>
+import Form from '~/components/base/Form.vue';
+
+const props = defineProps({
+    messagePlaceHolder: {
+        type: String,
+        default: 'Message',
+    },
+});
+</script>
+
+<style scoped>
+@media screen and (min-width: 1216px) {
+    .contact-form {
+        grid-template-columns: 1fr auto;
+        gap: theme('spacing.8');
+    }
+}
+</style>
