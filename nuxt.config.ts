@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
 
@@ -11,12 +10,11 @@ export default defineNuxtConfig({
         '@nuxt/image',
     ],
 
-    // Render rules
-    routeRules: {
-        // Homepage pre-rendered at build time
-        './': { prerender: true },
-        './about-us': { prerender: true },
-        './after-sale': { prerender: true },
-        './contact-us': { prerender: true },
-    },
+    // Render rules — pre-render ahead of time
+    // routeRules: {
+    //     '/': { prerender: true },
+    //     '/about-us': { prerender: true },
+    //     '/after-sale': { prerender: true },
+    //     '/contact-us': { prerender: true },
+    // },
 });

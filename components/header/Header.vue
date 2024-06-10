@@ -26,7 +26,6 @@
 <script setup>
 import Navbar from '~/components/header/Navbar.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { throttle } from 'lodash';
 
 const isMenuActive = ref(false);
 const isBlured = ref(false);
@@ -37,6 +36,18 @@ function handleEvent() {
 
 function handleScroll() {
     isBlured.value = window.scrollY >= 20;
+}
+
+function throttle(func, delay) {
+    let lastCall = 0;
+    return function (...args) {
+        const now = new Date().getTime();
+        if (now - lastCall < delay) {
+            return;
+        }
+        lastCall = now;
+        return func(...args);
+    };
 }
 
 const throttledHandleScroll = throttle(handleScroll, 100);
