@@ -11,10 +11,10 @@ export default defineNuxtConfig({
     ],
 
     // Render rules — pre-render ahead of time
-    // routeRules: {
-    //     '/': { prerender: true },
-    //     '/about-us': { prerender: true },
-    //     '/after-sale': { prerender: true },
-    //     '/contact-us': { prerender: true },
-    // },
+    routeRules: {
+        '/': { prerender: true },
+        '/about-us': { prerender: true },
+        '/after-sale': { prerender: true },
+        '/contact-us': { prerender: true },
+    },
 });
