@@ -1,15 +1,17 @@
 <template>
-    <nav
-        class="mobile-nav fixed inset-0 -z-10 flex h-0 w-full flex-col items-start justify-start gap-10 overflow-clip bg-secondary-800/50 backdrop-blur-md transition-all duration-700 md:hidden"
-        :class="{ active: isMenuActive }"
-    >
-        <NuxtLink
-            v-for="link in navLinks"
-            :to="link.slug"
-            :key="link.text"
-            class="w-full -translate-y-20 pl-4 text-xl font-medium text-secondary-100 opacity-0 transition-all delay-100 duration-500 first-of-type:mt-28"
-            >{{ link.text }}</NuxtLink
+    <nav class="fixed inset-0 -z-10">
+        <div
+            class="layout mobile-nav flex h-0 w-full flex-col items-start justify-start gap-10 overflow-clip bg-secondary-800/50 backdrop-blur-md transition-all duration-700 md:hidden"
+            :class="{ active: isMenuActive }"
         >
+            <NuxtLink
+                v-for="link in navLinks"
+                :to="link.slug"
+                :key="link.text"
+                class="w-full -translate-y-20 pl-4 text-xl font-medium text-secondary-100 opacity-0 transition-all delay-100 duration-500 first-of-type:mt-28"
+                >{{ link.text }}</NuxtLink
+            >
+        </div>
     </nav>
 </template>
 
