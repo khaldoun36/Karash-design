@@ -1,7 +1,5 @@
 <template>
-    <section
-        class="contact-form grid items-center justify-center pt-20 lg:pt-28"
-    >
+    <section class="contact-form grid items-center pt-20 lg:pt-28">
         <div
             class="contact-details-container grid gap-8 self-end md:grid-cols-2 xl:col-start-2 xl:row-start-1 xl:grid-cols-1 xl:pl-28"
         >

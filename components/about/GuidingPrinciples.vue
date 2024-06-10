@@ -1,5 +1,5 @@
 <template>
-    <section class="space-y-16 py-80 lg:py-28">
+    <section class="space-y-16 py-20 lg:py-28">
         <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
             Our Guiding Principles
         </h2>
