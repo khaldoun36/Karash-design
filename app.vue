@@ -1,9 +1,9 @@
 <template>
-    <!--    <Header />-->
+    <Header />
     <div class="content-grid">
         <NuxtPage />
+        <Footer />
     </div>
-    <!--    <Footer />-->
 </template>
 <script setup>
 import Header from '~/components/header/Header.vue';

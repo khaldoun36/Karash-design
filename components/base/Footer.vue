@@ -1,9 +1,9 @@
 <template>
     <footer
-        class="mx-auto flex flex-col items-center justify-between gap-8 border-t border-white/10 px-4 py-6 md:flex-row md:px-8 xl:max-w-[1216px]"
+        class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
     >
-        <NuxtLink to="/">
-            <KarashLogo />
+        <NuxtLink to="/" class="w-min overflow-clip border border-red-500">
+            <KarashLogo class="max-w-min" />
         </NuxtLink>
 
         <p class="text-base font-medium text-secondary-400">
