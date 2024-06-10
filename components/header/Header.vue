@@ -5,7 +5,7 @@
     >
         <div class="header-layout flex items-center justify-between py-4">
             <NuxtLink to="/" class="bg-dark">
-                <img
+                <NuxtImg
                     src="~/public/layer-1.svg"
                     alt="website's logo"
                     width="7118"

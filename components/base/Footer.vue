@@ -4,7 +4,7 @@
             class="footer-layout flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
         >
             <NuxtLink to="/">
-                <img
+                <NuxtImg
                     src="~/public/layer-1.svg"
                     alt="website's logo"
                     width="7118"
