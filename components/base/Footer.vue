@@ -1,7 +1,7 @@
 <template>
-    <footer class="content-grid">
+    <footer>
         <div
-            class="footer-layout flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
+            class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
         >
             <NuxtLink to="/">
                 <KarashLogo />
