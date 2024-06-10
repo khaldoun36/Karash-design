@@ -11,12 +11,12 @@ export default defineNuxtConfig({
         '@nuxt/image',
     ],
 
-    //     Render rules
-    // routeRules: {
-    //     // Homepage pre-rendered at build time
-    //     './': { prerender: true },
-    //     './about-us': { prerender: true },
-    //     './after-sale': { prerender: true },
-    //     './contact-us': { prerender: true },
-    // },
+    // Render rules
+    routeRules: {
+        // Homepage pre-rendered at build time
+        './': { prerender: true },
+        './about-us': { prerender: true },
+        './after-sale': { prerender: true },
+        './contact-us': { prerender: true },
+    },
 });
