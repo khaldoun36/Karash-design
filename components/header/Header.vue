@@ -5,8 +5,8 @@
     >
         <div class="header-layout flex items-center justify-between py-4">
             <NuxtLink to="/" class="bg-dark">
-                <img
-                    src="~/public/layer-1.svg"
+                <NuxtImg
+                    src="./layer-1.svg"
                     alt="website's logo"
                     width="7118"
                     height="2563"
@@ -40,13 +40,19 @@ function handleScroll() {
 
 function throttle(func, delay) {
     let lastCall = 0;
+    let timeout;
     return function (...args) {
         const now = new Date().getTime();
         if (now - lastCall < delay) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                lastCall = new Date().getTime();
+                func(...args);
+            }, delay);
             return;
         }
         lastCall = now;
-        return func(...args);
+        func(...args);
     };
 }
 
