@@ -5,13 +5,7 @@
     >
         <div class="header-layout flex items-center justify-between py-4">
             <NuxtLink to="/" class="bg-dark">
-                <NuxtImg
-                    src="./layer-1.svg"
-                    alt="website's logo"
-                    width="7118"
-                    height="2563"
-                    class="h-8 max-w-min"
-                />
+                <KarashLogo />
             </NuxtLink>
             <Navbar />
             <HeaderDrawerButton
@@ -26,6 +20,7 @@
 <script setup>
 import Navbar from '~/components/header/Navbar.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import KarashLogo from '~/components/base/KarashLogo.vue';
 
 const isMenuActive = ref(false);
 const isBlured = ref(false);

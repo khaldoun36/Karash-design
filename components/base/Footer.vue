@@ -4,13 +4,7 @@
             class="footer-layout flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
         >
             <NuxtLink to="/">
-                <img
-                    src="~/public/layer-1.svg"
-                    alt="website's logo"
-                    width="7118"
-                    height="2563"
-                    class="h-8 max-w-min"
-                />
+                <KarashLogo />
             </NuxtLink>
 
             <p class="text-base font-medium text-secondary-400">
@@ -23,6 +17,7 @@
 
 <script setup>
 import SocialLinks from '~/components/base/SocialLinks.vue';
+import KarashLogo from '~/components/base/KarashLogo.vue';
 </script>
 
 <style scoped></style>
