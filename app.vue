@@ -3,7 +3,7 @@
     <div class="content-grid">
         <NuxtPage />
     </div>
-    <Footer />
+    <!--    <Footer />-->
 </template>
 <script setup>
 import Header from '~/components/header/Header.vue';
