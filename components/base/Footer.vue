@@ -1,17 +1,15 @@
 <template>
-    <footer>
-        <div
-            class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
-        >
-            <NuxtLink to="/">
-                <KarashLogo />
-            </NuxtLink>
+    <footer
+        class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
+    >
+        <NuxtLink to="/">
+            <KarashLogo />
+        </NuxtLink>
 
-            <p class="text-base font-medium text-secondary-400">
-                All rights reserved &copy; {{ new Date().getFullYear() }}
-            </p>
-            <SocialLinks size="32px" />
-        </div>
+        <p class="text-base font-medium text-secondary-400">
+            All rights reserved &copy; {{ new Date().getFullYear() }}
+        </p>
+        <SocialLinks size="32px" />
     </footer>
 </template>
 
