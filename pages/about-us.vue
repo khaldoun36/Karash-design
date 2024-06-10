@@ -50,7 +50,7 @@
     </section>
     <Achievements />
     <NuxtImg
-        src="./images/about-us-header.jpg"
+        src="/images/about-us-header.jpg"
         class="full-width aspect-video max-h-[800px] min-w-full object-cover"
         alt="An image of the compnay founders and employees"
         loading="lazy"
