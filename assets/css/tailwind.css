@@ -40,9 +40,9 @@
 .content-grid {
     display: grid;
     grid-template-columns:
-        [full-width-start] theme('spacing.4')
+        [full-width-start] 1rem
         [content-start] 1fr [content-end]
-        theme('spacing.4') [full-width-end];
+        1rem [full-width-end];
 }
 
 .content-grid > * {
@@ -56,23 +56,21 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
     .content-grid {
-        display: grid;
         grid-template-columns:
-            [full-width-start] theme('spacing.8')
+            [full-width-start] 2rem
             [content-start] 1fr [content-end]
-            theme('spacing.8') [full-width-end];
+            2rem [full-width-end];
     }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .content-grid {
-        display: grid;
         grid-template-columns:
             [full-width-start] 1fr
             [content-start] repeat(12, minmax(0, 4.5rem)) [content-end]
             1fr [full-width-end];
-        column-gap: theme('spacing.8');
+        column-gap: 2rem;
     }
 }
 
@@ -80,7 +78,4 @@ body {
     background-color: theme('colors.secondary.900');
 }
 
-/* *************** */
-/* Utility classes */
-/* *************** */
 
