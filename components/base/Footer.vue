@@ -1,5 +1,5 @@
 <template>
-    <footer class="full-width content-grid">
+    <footer class="content-grid">
         <div
             class="footer-layout flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
         >
