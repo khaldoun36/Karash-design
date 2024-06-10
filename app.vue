@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="content-grid">
+    <div class="content-grid full-width">
         <NuxtPage />
     </div>
     <Footer />
