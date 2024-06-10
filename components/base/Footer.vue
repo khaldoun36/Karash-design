@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="mx-auto flex max-w-[1216px] flex-col items-center justify-between gap-8 border-t border-white/10 px-4 py-6 md:flex-row md:px-8"
+        class="mx-auto flex flex-col items-center justify-between gap-8 border-t border-white/10 px-4 py-6 md:flex-row md:px-8 xl:max-w-[1216px]"
     >
         <NuxtLink to="/">
             <KarashLogo />
