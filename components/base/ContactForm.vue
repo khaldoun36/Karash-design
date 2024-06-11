@@ -11,24 +11,24 @@
                 </h2>
                 <NuxtLink
                     to="mailto:mainbranch@karash.com"
-                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
                 >
                     <span class="font-normal text-secondary-400">Email:</span>
-                    mainbranch@karash.com
+                    <span> mainbranch@karash.com</span>
                 </NuxtLink>
                 <NuxtLink
                     to="tel:009647503520001"
-                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
                 >
                     <span class="font-normal text-secondary-400">Phone:</span>
-                    +964 750 352 0001
+                    <span>+964 750 352 0001</span>
                 </NuxtLink>
                 <NuxtLink
                     to="tel:+9647504453841"
-                    class="text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
                 >
                     <span class="font-normal text-secondary-400">Phone:</span>
-                    +964 750 445 3841
+                    <span>+964 750 445 3841</span>
                 </NuxtLink>
             </div>
             <div class="dministrative-hours flex flex-col gap-2.5">
@@ -61,6 +61,12 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.contact-link {
+    display: inline-grid;
+    grid-template-columns: 60px 1fr;
+    gap: 8px;
+}
+
 @media screen and (min-width: 1216px) {
     .contact-form {
         grid-template-columns: 1fr auto;
