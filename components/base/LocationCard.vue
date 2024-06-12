@@ -6,14 +6,21 @@
             {{ city }}
         </h4>
         <div class="space-y-6">
-            <p class="location-info min-h-[60px] text-sm text-secondary-400">
+            <NuxtLink
+                class="location-info min-h-[60px] text-sm text-secondary-400"
+                :to="locationLink"
+                target="_blank"
+            >
                 <Icon name="ph:map-pin" size="24px" />
                 <span>{{ location }}</span>
-            </p>
-            <p class="location-info text-sm text-secondary-400">
+            </NuxtLink>
+            <NuxtLink
+                class="location-info text-sm text-secondary-400"
+                :to="`tel:${phoneNumber}`"
+            >
                 <Icon name="ph:phone" size="24px" />
                 <span>{{ phoneNumber }}</span>
-            </p>
+            </NuxtLink>
         </div>
     </div>
 </template>
@@ -23,6 +30,7 @@ const props = defineProps({
     city: String,
     location: String,
     phoneNumber: String,
+    locationLink: String,
 });
 </script>
 

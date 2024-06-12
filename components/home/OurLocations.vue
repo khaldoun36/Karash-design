@@ -10,6 +10,7 @@
                 v-for="item in storeLocations"
                 :city="item.city"
                 :location="item.location"
+                :locationLink="item.locationLink"
                 :phoneNumber="item.phoneNumber"
                 :key="item.phoneNumber"
             />
@@ -23,6 +24,7 @@
                     :key="item.location"
                     :city="selectedLocation"
                     :location="item.location"
+                    :locationLink="item.locationLink"
                     :phoneNumber="item.phoneNumber"
                 />
             </div>
