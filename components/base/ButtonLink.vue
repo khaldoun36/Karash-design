@@ -22,6 +22,9 @@ const props = defineProps(['className']);
 </script>
 
 <style>
+.btn {
+    direction: ltr !important;
+}
 .btn.primary {
     background-color: theme('colors.primary.500');
 }

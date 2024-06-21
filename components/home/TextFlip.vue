@@ -2,17 +2,19 @@
     <h1
         class="words-wrapper text-balance text-4xl font-semibold text-secondary-50 lg:text-6xl"
     >
-        Crafting beautiful
+        {{ $t('home_hero_title.mainText') }}
         <span class="words">
-            <span class="current" data-bg-color="#ffc703" data-color="#000"
-                >kitchens</span
+            <span class="current" data-bg-color="#ffc703" data-color="#000">
+                {{ $t('home_hero_title.words.kitchens') }}</span
             >
-            <span class="next" data-bg-color="#004e98" data-color="#fff"
-                >homes</span
-            >
-            <span data-bg-color="#8cb369" data-color="#000">furniture</span>
+            <span class="next" data-bg-color="#004e98" data-color="#fff">{{
+                $t('home_hero_title.words.homes')
+            }}</span>
+            <span data-bg-color="#8cb369" data-color="#000">{{
+                $t('home_hero_title.words.furniture')
+            }}</span>
         </span>
-        since 2004
+        {{ $t('home_hero_title.since') }}
     </h1>
 </template>
 
@@ -89,7 +91,7 @@ onMounted(() => {
 
 @media screen and (min-width: 1024px) {
     .words-wrapper .words {
-        height: 60px;
+        height: calc(3.75rem * 1.2);
     }
 }
 </style>

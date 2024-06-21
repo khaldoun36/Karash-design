@@ -9,13 +9,15 @@
                 <h4
                     class="text-3xl font-semibold text-secondary-50 lg:text-5xl"
                 >
-                    Have an idea?
+                    {{ $t('home_cta.title') }}
                 </h4>
                 <p class="text-base text-secondary-400 lg:text-lg">
-                    Let's create your dream interior together.
+                    {{ $t('home_cta.description') }}
                 </p>
             </div>
-            <ButtonLink class="primary" to="/contact-us">Contact us</ButtonLink>
+            <ButtonLink class="primary" to="/contact-us">
+                {{ $t('home_cta.btn') }}</ButtonLink
+            >
         </div>
         <NuxtImg
             src="/images/about-us-header.jpg"

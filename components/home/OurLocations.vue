@@ -1,7 +1,9 @@
 <template>
     <section class="locations space-y-16 py-20 lg:py-28">
         <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
-            We are present <br />Across Iraq
+            {{ $t('home_locations.title_1') }} <br />{{
+                $t('home_locations.title_2')
+            }}
         </h2>
         <div
             class="mobile-locations grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:hidden"

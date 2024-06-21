@@ -62,4 +62,8 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+header {
+    direction: ltr !important;
+}
+</style>

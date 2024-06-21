@@ -1,0 +1,64 @@
+{
+  "home_hero_title": {
+    "mainText": "Güzel tasarımlar üretiyoruz",
+    "words": {
+      "kitchens": "mutfaklar",
+      "homes": "evler",
+      "furniture": "mobilyalar"
+    },
+    "since": "2004'ten beri"
+  },
+
+  "home_hero_description": "Karash Şirketi ile mekanınızı soluk kesen bir sanat eserine dönüştürün. Yaratıcılığın, yeniliğin ve hassas zanaatkarlığın buluştuğu yer.",
+
+  "home_hero_btn_group": {
+    "btn_cta": "Bize Ulaşın",
+    "btn_view_projects": "Projeleri Görüntüle"
+  },
+
+  "home_partners": "İş ortaklarımız",
+
+  "home_about": {
+    "title": "Hakkımızda",
+    "description_1": "2004 yılında kurulan şirketimizin misyonu, insan ruhunu yükselten olağanüstü deneyimlere dönüşen mekanlar yaratmaktır. Mühendislik ve iç mimarlık alanlarını sorunsuz bir şekilde birleştirerek, ilham veren ve yenilikçi ortamlar oluşturma yolculuğuna çıkarız.",
+    "description_2": "Her projede, mühendislerimiz, tasarımcılarımız ve vizyonerlerimiz, müşterilerimizle yakın iş birliği yapar ve onların arzularını fonksiyonellik, yenilik ve estetik güzellikle uyumlu şekilde işlenmiş tasarımlara dönüştürür. İş birliğimize ve mükemmeliyete olan bağlılığımız sayesinde, sıradanlığı aşan ve deneyimleyen herkes üzerinde kalıcı bir iz bırakan mekanlar sunarız.",
+    "grid_titles": {
+      "successful_projects": "Başarılı Projeler",
+      "years-of-experience": "Deneyim Yılı",
+      "locations-across-iraq": "Irak Genelinde Konumlar",
+      "satisfaction-rate": "Memnuniyet Oranı"
+    }
+  },
+
+  "home_projects": {
+    "title": "Bizim imza projelerimiz",
+    "btn": "Projeleri Görüntüle"
+  },
+  "home_services": {
+    "item_1": {
+      "title": "Şık mutfak ve mobilya tasarımları",
+      "description": "Şirketimiz çeşitli mutfak stilleri ve iç mekan mobilyaları üretmektedir. Aydınlatma, duvar kağıdı ve aksesuarlar için premium Türk ve İtalyan markalarıyla özel işbirlikleri sunuyoruz, böylelikle sunduğumuz ürünlerde yüksek kalite standartlarını garanti altına alıyoruz."
+    },
+    "item_2": {
+      "title": "Özel iç mekan tasarımları",
+      "description": "İç mimarlık ekibimiz, benzersiz stilinizi yansıtan davetkar mekanlar yaratıyor. Yetenekli tasarımcılarımız, işlevsel ve zarif iç mekanlar oluşturmak için olağanüstü özen göstererek günlük yaşam deneyiminizi yükseltiyor."
+    },
+    "item_3": {
+      "title": "Yenilikçi ahşap ve alçı taşı çözümleri",
+      "description": "Özel ahşap malzemeler ve titiz zanaatkarlık kullanarak, ustalarımız mimari elemanlar, ev dekorasyonu ve özel projeler için uygun maliyetli ancak dikkat çekici alçı taşı benzeri parçalar üretiyor."
+    }
+  },
+
+  "home_locations": {
+    "title_1": "Biz buradayız",
+    "title_2": "Irak genelinde"
+  },
+
+  "home_cta": {
+    "title": "Bir fikriniz mi var?",
+    "description": "Hayalinizdeki iç mekanı birlikte yaratalım.",
+    "btn": "İletişim"
+  }
+
+
+}

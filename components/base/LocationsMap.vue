@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="map">
         <svg
             width="685"
             height="695"
@@ -340,4 +340,8 @@ const changeLocation = (event) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.map {
+    direction: ltr !important;
+}
+</style>

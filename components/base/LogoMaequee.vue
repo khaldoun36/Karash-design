@@ -37,6 +37,7 @@ onMounted(() => {
         var(--mask-color, #333) 80%,
         transparent
     );
+    direction: ltr !important;
 }
 
 .scroller__inner {

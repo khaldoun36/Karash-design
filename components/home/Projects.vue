@@ -6,10 +6,10 @@
             class="flex flex-col items-start gap-6 lg:flex-row lg:items-baseline lg:justify-between"
         >
             <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
-                Our signature projects
+                {{ $t('home_projects.title') }}
             </h2>
-            <ButtonLink class="secondary" className="pl-0 lg:pl-6"
-                >View projects</ButtonLink
+            <ButtonLink class="secondary" className="pl-0 lg:pl-6">
+                {{ $t('home_projects.btn') }}</ButtonLink
             >
         </div>
         <ProjectsCarousel />

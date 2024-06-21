@@ -5,7 +5,7 @@
         <h2
             class="text-center text-2xl font-semibold text-secondary-50 lg:text-4xl"
         >
-            Our partners
+            {{ $t('home_partners') }}
         </h2>
         <LogoMaequee>
             <Logo>

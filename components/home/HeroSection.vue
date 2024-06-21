@@ -30,13 +30,15 @@
 
         <HomeTextFlip />
         <p class="mt-4 max-w-[65ch] text-base text-secondary-400 lg:text-lg">
-            Transform your space into a breathtaking work of art with Karash
-            Company. Where creativity, innovation, and precision craftsmanship
-            converge.
+            {{ $t('home_hero_description') }}
         </p>
         <div class="hero-btn-container mt-8 flex items-center">
-            <BaseButtonLink class="primary">Contact us</BaseButtonLink>
-            <BaseButtonLink class="secondary">View projects</BaseButtonLink>
+            <BaseButtonLink class="primary">{{
+                $t('home_hero_btn_group.btn_cta')
+            }}</BaseButtonLink>
+            <BaseButtonLink class="secondary">{{
+                $t('home_hero_btn_group.btn_view_projects')
+            }}</BaseButtonLink>
         </div>
     </main>
 </template>

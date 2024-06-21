@@ -1,0 +1,62 @@
+{
+  "home_hero_title": {
+    "mainText": "Crafting beautiful",
+    "words": {
+      "kitchens": "kitchens",
+      "homes": "homes",
+      "furniture": "furniture"
+    },
+    "since": "since 2004"
+  },
+
+"home_hero_description": "Transform your space into a breathtaking work of art with Karash Company. Where creativity, innovation, and precision craftsmanship converge.",
+
+  "home_hero_btn_group": {
+    "btn_cta": "Contact us",
+    "btn_view_projects": "View Projects"
+  },
+  "home_partners": "Our partners",
+
+  "home_about": {
+    "title": "About us",
+    "description_1": "Founded in 2004, our mission is to transform spaces into extraordinary experiences that elevate the human spirit. We seamlessly blend engineering and interior design, embarking on a journey to create captivating environments that inspire and innovate.",
+    "description_2": "With every project, our talented team of engineers, designers, and visionaries collaborates closely with clients, translating their aspirations into meticulously crafted designs that harmonize functionality, innovation, and aesthetic beauty. Through our collaborative approach and commitment to excellence, we deliver spaces that transcend the ordinary, leaving a lasting impression on all who experience them.",
+    "grid_titles": {
+      "successful_projects": "Successful Projects",
+      "years-of-experience": "Years of Experience",
+      "locations-across-iraq": "Locations Across Iraq",
+      "satisfaction-rate": "Satisfaction Rate"
+    }
+  },
+
+  "home_projects": {
+    "title": "Our signature projects",
+    "btn": "View projects"
+  },
+
+  "home_services": {
+    "item_1": {
+      "title": "Stylish kitchen and furniture designs",
+      "description": "Our company manufactures a diverse range of kitchen styles and interior furnishings. We offer exclusive partnerships with premium Turkish and Italian brands for lighting, wallpapers, and accessories, ensuring high-quality specifications across our offerings."
+    },
+    "item_2": {
+      "title": "Exclusive interior designs",
+      "description": "Our interior design team transforms spaces into inviting havens that reflect your unique style. With exceptional care and precision, our talented designers craft functional and elegant interiors that elevate your everyday living experience."
+    },
+    "item_3": {
+      "title": "Innovative wood and alabaster solutions",
+      "description": "Using specialized wood materials and meticulous craftsmanship, our artisans create affordable yet remarkably realistic alabaster-like pieces for architectural elements, home decor, and custom projects."
+    }
+  },
+
+  "home_locations": {
+    "title_1": "We are present",
+    "title_2": "Across Iraq"
+  },
+
+  "home_cta": {
+    "title": "Have an idea?",
+    "description": "Let's create your dream interior together.",
+    "btn": "Contact"
+  }
+}

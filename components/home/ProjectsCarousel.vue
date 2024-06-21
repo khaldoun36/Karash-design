@@ -78,6 +78,7 @@ onUnmounted(() => {
 .embla__viewport {
     overflow: hidden;
     width: 100%;
+    direction: ltr !important;
 }
 
 .embla__container {

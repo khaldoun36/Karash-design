@@ -4,25 +4,33 @@
             <p class="text-5xl font-extralight text-secondary-50 lg:text-7xl">
                 100+
             </p>
-            <p class="text-base text-secondary-400">Successful Projects</p>
+            <p class="text-base text-secondary-400">
+                {{ $t('home_about.grid_titles.successful_projects') }}
+            </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8 pl-8">
             <p class="text-5xl font-extralight text-secondary-50 lg:text-7xl">
                 {{ yearsOfExperience }}
             </p>
-            <p class="text-base text-secondary-400">Years of Experience</p>
+            <p class="text-base text-secondary-400">
+                {{ $t('home_about.grid_titles.years-of-experience') }}
+            </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8">
             <p class="text-5xl font-extralight text-secondary-50 lg:text-7xl">
                 9
             </p>
-            <p class="text-base text-secondary-400">Locations Across Iraq</p>
+            <p class="text-base text-secondary-400">
+                {{ $t('home_about.grid_titles.locations-across-iraq') }}
+            </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8 pl-8">
             <p class="text-5xl font-extralight text-secondary-50 lg:text-7xl">
                 100%
             </p>
-            <p class="text-base text-secondary-400">Satisfaction Rate</p>
+            <p class="text-base text-secondary-400">
+                {{ $t('home_about.grid_titles.satisfaction-rate') }}
+            </p>
         </div>
         <div class="h-line" aria-hidden="true" aria-label="decorative"></div>
         <div class="v-line" aria-hidden="true" aria-label="decorative"></div>

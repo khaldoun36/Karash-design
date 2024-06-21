@@ -67,28 +67,27 @@ import {
     AccordionTrigger,
 } from 'radix-vue';
 
+const { t } = useI18n();
+
 const accordionItems = [
     {
         value: 'item-1',
-        title: 'Stylish kitchen and furniture designs',
-        content:
-            'Our company manufactures a diverse range of kitchen styles and interior furnishings. We offer exclusive partnerships with premium Turkish and Italian brands for lighting, wallpapers, and accessories, ensuring high-quality specifications across our offerings.',
+        title: `${t('home_services.item_1.title')}`,
+        content: `${t('home_services.item_1.description')}`,
         imageURL:
             'https://images.unsplash.com/photo-1467921309565-6a8bf128d229?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
         value: 'item-2',
-        title: 'Exclusive interior designs',
-        content:
-            'Our interior design team transforms spaces into inviting havens that reflect your unique style. With exceptional care and precision, our talented designers craft functional and elegant interiors that elevate your everyday living experience.',
+        title: `${t('home_services.item_2.title')}`,
+        content: `${t('home_services.item_2.description')}`,
         imageURL:
             'https://plus.unsplash.com/premium_photo-1683888725049-0e7337583bbf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
         value: 'item-3',
-        title: 'Innovative wood and alabaster solutions',
-        content:
-            'Using specialized wood materials and meticulous craftsmanship, our artisans create affordable yet remarkably realistic alabaster-like pieces for architectural elements, home decor, and custom projects.',
+        title: `${t('home_services.item_3.title')}`,
+        content: `${t('home_services.item_3.description')}`,
         imageURL:
             'https://images.unsplash.com/photo-1549089154-ad7b2808944c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },

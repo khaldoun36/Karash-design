@@ -8,6 +8,40 @@ export default defineNuxtConfig({
         '@nuxt/image',
     ],
 
+    // Internationalization Routing Options
+    i18n: {
+        lazy: true,
+        langDir: 'locales',
+        strategy: 'prefix',
+        locales: [
+            {
+                code: 'en-US',
+                iso: 'en-US',
+                name: 'English',
+                file: 'en-US.json',
+            },
+            {
+                code: 'ar-IQ',
+                iso: 'ar-IQ',
+                name: 'العربية',
+                file: 'ar-IQ.json',
+            },
+            {
+                code: 'ku',
+                iso: 'ku',
+                name: 'کوردی',
+                file: 'ku.json',
+            },
+            {
+                code: 'tr',
+                iso: 'tr',
+                name: 'Türkçe',
+                file: 'tr.json',
+            },
+        ],
+        defaultLocale: 'en-US',
+    },
+
     // Render rules — pre-render ahead of time
     routeRules: {
         '/': { prerender: true },
