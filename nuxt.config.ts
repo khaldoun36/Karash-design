@@ -14,7 +14,6 @@ export default defineNuxtConfig({
         lazy: true,
         langDir: 'locales',
         strategy: 'prefix_except_default',
-        detectBrowserLanguage: false,
         locales: [
             {
                 code: 'en',
@@ -45,7 +44,7 @@ export default defineNuxtConfig({
                 dir: 'ltr',
             },
         ],
-        defaultLocale: 'en-US',
+        defaultLocale: 'en',
     },
 
     // Render rules — pre-render ahead of time
