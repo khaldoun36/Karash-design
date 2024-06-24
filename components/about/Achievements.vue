@@ -3,25 +3,25 @@
         <div
             class="flex flex-col items-center justify-center gap-3 justify-self-start"
         >
-            <p class="text-5xl font-light text-secondary-50 lg:text-8xl">
+            <p class="lg:text-8xl text-5xl font-light text-secondary-50">
                 100+
             </p>
             <p class="text-balance text-xs text-secondary-400 lg:text-xl">
-                Successful projects
+                {{ $t('pages.about.sections.numbers.successfulProjects') }}
             </p>
         </div>
         <div class="flex flex-col items-center justify-center gap-3">
-            <p class="text-5xl font-light text-secondary-50 lg:text-8xl">20+</p>
+            <p class="lg:text-8xl text-5xl font-light text-secondary-50">20+</p>
             <p class="text-balance text-xs text-secondary-400 lg:text-xl">
-                Years of Experience
+                {{ $t('pages.about.sections.numbers.experience') }}
             </p>
         </div>
         <div
             class="flex flex-col items-center justify-center gap-3 justify-self-end"
         >
-            <p class="text-5xl font-light text-secondary-50 lg:text-8xl">9+</p>
+            <p class="lg:text-8xl text-5xl font-light text-secondary-50">9+</p>
             <p class="text-balance text-xs text-secondary-400 lg:text-xl">
-                Locations Across Iraq
+                {{ $t('pages.about.sections.numbers.locations') }}
             </p>
         </div>
     </section>

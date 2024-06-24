@@ -1,62 +1,110 @@
 {
-  "home_hero_title": {
-    "mainText": "Crafting beautiful",
-    "words": {
-      "kitchens": "kitchens",
-      "homes": "homes",
-      "furniture": "furniture"
+    "shared": {
+        "buttons": {
+            "cta": "",
+            "viewProjects": ""
+        }
     },
-    "since": "since 2004"
-  },
 
-"home_hero_description": "Transform your space into a breathtaking work of art with Karash Company. Where creativity, innovation, and precision craftsmanship converge.",
+    "home_hero_title": {
+        "mainText": "Crafting beautiful",
+        "words": {
+            "kitchens": "kitchens",
+            "homes": "homes",
+            "furniture": "furniture"
+        },
+        "since": "since 2004"
+    },
 
-  "home_hero_btn_group": {
-    "btn_cta": "Contact us",
-    "btn_view_projects": "View Projects"
-  },
-  "home_partners": "Our partners",
+    "home_hero_description": "Transform your space into a breathtaking work of art with Karash Company. Where creativity, innovation, and precision craftsmanship converge.",
 
-  "home_about": {
-    "title": "About us",
-    "description_1": "Founded in 2004, our mission is to transform spaces into extraordinary experiences that elevate the human spirit. We seamlessly blend engineering and interior design, embarking on a journey to create captivating environments that inspire and innovate.",
-    "description_2": "With every project, our talented team of engineers, designers, and visionaries collaborates closely with clients, translating their aspirations into meticulously crafted designs that harmonize functionality, innovation, and aesthetic beauty. Through our collaborative approach and commitment to excellence, we deliver spaces that transcend the ordinary, leaving a lasting impression on all who experience them.",
-    "grid_titles": {
-      "successful_projects": "Successful Projects",
-      "years-of-experience": "Years of Experience",
-      "locations-across-iraq": "Locations Across Iraq",
-      "satisfaction-rate": "Satisfaction Rate"
+    "home_hero_btn_group": {
+        "btn_cta": "Contact us",
+        "btn_view_projects": "View Projects"
+    },
+    "home_partners": "Our partners",
+
+    "home_about": {
+        "title": "About us",
+        "description_1": "Founded in 2004, our mission is to transform spaces into extraordinary experiences that elevate the human spirit. We seamlessly blend engineering and interior design, embarking on a journey to create captivating environments that inspire and innovate.",
+        "description_2": "With every project, our talented team of engineers, designers, and visionaries collaborates closely with clients, translating their aspirations into meticulously crafted designs that harmonize functionality, innovation, and aesthetic beauty. Through our collaborative approach and commitment to excellence, we deliver spaces that transcend the ordinary, leaving a lasting impression on all who experience them.",
+        "grid_titles": {
+            "successful_projects": "Successful Projects",
+            "years-of-experience": "Years of Experience",
+            "locations-across-iraq": "Locations Across Iraq",
+            "satisfaction-rate": "Satisfaction Rate"
+        }
+    },
+
+    "home_projects": {
+        "title": "Our signature projects",
+        "btn": "View projects"
+    },
+
+    "home_services": {
+        "item_1": {
+            "title": "Stylish kitchen and furniture designs",
+            "description": "Our company manufactures a diverse range of kitchen styles and interior furnishings. We offer exclusive partnerships with premium Turkish and Italian brands for lighting, wallpapers, and accessories, ensuring high-quality specifications across our offerings."
+        },
+        "item_2": {
+            "title": "Exclusive interior designs",
+            "description": "Our interior design team transforms spaces into inviting havens that reflect your unique style. With exceptional care and precision, our talented designers craft functional and elegant interiors that elevate your everyday living experience."
+        },
+        "item_3": {
+            "title": "Innovative wood and alabaster solutions",
+            "description": "Using specialized wood materials and meticulous craftsmanship, our artisans create affordable yet remarkably realistic alabaster-like pieces for architectural elements, home decor, and custom projects."
+        }
+    },
+
+    "home_locations": {
+        "title_1": "We are present",
+        "title_2": "Across Iraq"
+    },
+
+    "home_cta": {
+        "title": "Have an idea?",
+        "description": "Let's create your dream interior together.",
+        "btn": "Contact"
+    },
+
+    "pages": {
+        "about": {
+            "mainTitle": "We build your dream interior",
+            "sections": {
+                "whoWeAre": {
+                    "title": "Who we are",
+                    "paragraphOne": "Welcome to Karash Company, where tradition, innovation, and exquisite craftsmanship converge to redefine home furniture, kitchens, and decor. Since our founding in 2004, we have been dedicated to building trust and ensuring customer satisfaction by providing exceptional services and the highest quality wood.",
+                    "paragraphTwo": "As the industry leader, we are proud to operate two state-of-the-art factories in Turkey and three in Erbil, alongside exclusive manufacturing agencies for alabaster surfaces, electrical equipment, accessories, wallpapers, handrails, and wooden and iron doors. With eleven branches across Iraq and plans for international expansion, we are committed to transforming your living spaces with unparalleled elegance and functionality.",
+                    "paragraphThree": "Step into a world where superior craftsmanship meets visionary design, and let Karash Company elevate your home to new heights of sophistication and style."
+                },
+                "numbers": {
+                    "successfulProjects": "Successful projects",
+                    "experience": "Years of Experience",
+                    "locations": "Locations Across Iraq"
+                },
+                "guidingPrinciples": {
+                    "fieldOfWork": {
+                        "title": "Field of Work",
+                        "paragraphOne": "We stand as a leading manufacturer in Iraq, specializing in crafting home furnishings, kitchens, interior decor, and wood and artificial alabaster. We proudly hold exclusive international partnerships with commercial agencies in the sector, introducing unique products to the Iraqi market that were previously unavailable.",
+                        "paragraphTwo": "Our specialization spans across a comprehensive range of kitchen styles, including modern, classic, semi-classic, and luxury designs. Additionally, we excel in creating bespoke interior decor, doors, furnishings for educational and healthcare facilities, bedrooms, and exquisite artificial alabaster products. Leveraging prestigious global partnerships, we ensure top-notch quality and distinctiveness in areas such as lighting, wallpapers, and accessories sourced from esteemed Turkish and Italian origins."
+                    },
+                    "goal": {
+                        "title": "Goal",
+                        "paragraphOne": "Our primary objective is to solidify our name through the exceptional works we provide to our clients in Iraq and abroad. Guided by a well-organized plan, we seek to expand our activities, delivering our services across all parts Iraq, and beyond.",
+                        "paragraphTwo": "Our methodology revolves around a client-centric process that sets the foundation for excellence. We believe in forging collaborative partnerships with our clients, understanding their unique needs, and continuously refining our approach through feedback loops. By embracing innovation, adaptability, and open communication, we ensure that our final creations surpass expectations, embodying the shared vision of our clients and our commitment to excellence."
+                    },
+                    "vision": {
+                        "title": "Vision",
+                        "paragraphOne": "We strive to establish ourselves as the premier choice in the world of home furniture, kitchen design, and interior decor. Our methodology is rooted in delivering exceptional services with the utmost professionalism and industry-leading practices.",
+                        "paragraphTwo": "Central to our vision is the aspiration to extend our reach far and wide, ensuring that every space we touch reflects our dedication to quality and customer satisfaction. By embracing innovation, adaptability, and open communication, we aim to consistently exceed expectations and bring our clients' visions to life."
+                    },
+                    "quality": {
+                        "title": "Quality",
+                        "paragraphOne": "Our approach prioritizes quality and aesthetics, which we steadfastly uphold. We are dedicated to enhancing quality and precision in all our endeavors through a specialized process that continually updates to meet our customers' diverse needs. With extensive experience in designing, manufacturing, and executing home furniture projects, including kitchens and decor, we have been a trusted name in the industry since 2004.",
+                        "paragraphTwo": "Our commitment to excellence is reflected in our rigorous quality policy, which involves continuous inspection, stringent work control, and progress monitoring. We are deeply committed to ensuring customer satisfaction with the services we provide, always striving to exceed expectations through our attention to detail and dedication to superior craftsmanship."
+                    }
+                }
+            }
+        }
     }
-  },
-
-  "home_projects": {
-    "title": "Our signature projects",
-    "btn": "View projects"
-  },
-
-  "home_services": {
-    "item_1": {
-      "title": "Stylish kitchen and furniture designs",
-      "description": "Our company manufactures a diverse range of kitchen styles and interior furnishings. We offer exclusive partnerships with premium Turkish and Italian brands for lighting, wallpapers, and accessories, ensuring high-quality specifications across our offerings."
-    },
-    "item_2": {
-      "title": "Exclusive interior designs",
-      "description": "Our interior design team transforms spaces into inviting havens that reflect your unique style. With exceptional care and precision, our talented designers craft functional and elegant interiors that elevate your everyday living experience."
-    },
-    "item_3": {
-      "title": "Innovative wood and alabaster solutions",
-      "description": "Using specialized wood materials and meticulous craftsmanship, our artisans create affordable yet remarkably realistic alabaster-like pieces for architectural elements, home decor, and custom projects."
-    }
-  },
-
-  "home_locations": {
-    "title_1": "We are present",
-    "title_2": "Across Iraq"
-  },
-
-  "home_cta": {
-    "title": "Have an idea?",
-    "description": "Let's create your dream interior together.",
-    "btn": "Contact"
-  }
 }

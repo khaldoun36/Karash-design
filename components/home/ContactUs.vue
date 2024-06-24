@@ -15,7 +15,7 @@
                     {{ $t('home_cta.description') }}
                 </p>
             </div>
-            <ButtonLink class="primary" to="/contact-us">
+            <ButtonLink class="primary" :to="localePath('/contact-us')">
                 {{ $t('home_cta.btn') }}</ButtonLink
             >
         </div>
@@ -33,6 +33,7 @@
 
 <script setup>
 import ButtonLink from '~/components/base/ButtonLink.vue';
+const localePath = useLocalePath();
 </script>
 
 <style scoped>

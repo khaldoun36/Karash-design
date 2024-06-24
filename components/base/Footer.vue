@@ -2,7 +2,7 @@
     <footer
         class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
     >
-        <NuxtLink to="/" class="w-min overflow-clip">
+        <NuxtLink :to="localePath(`/`)" class="w-min overflow-clip">
             <KarashLogo class="max-w-min" />
         </NuxtLink>
 
@@ -16,6 +16,8 @@
 <script setup>
 import SocialLinks from '~/components/base/SocialLinks.vue';
 import KarashLogo from '~/components/base/KarashLogo.vue';
+
+const localePath = useLocalePath();
 </script>
 
 <style scoped></style>

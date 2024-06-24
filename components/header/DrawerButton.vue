@@ -1,9 +1,9 @@
 <template>
     <button
-        class="btn-container relative size-10 cursor-pointer transition-transform md:hidden"
-        :class="{ active: isMenuActive }"
+        class="btn-container relative order-last size-10 cursor-pointer transition-transform md:hidden"
+        :class="{ active: store.menuActive }"
         aria-label="Hamburger menu"
-        @click="handleClick"
+        @click="store.toggleMenu"
     >
         <div
             class="line line-1 absolute left-[7px] top-[7px] size-[26px] transition-transform duration-300"
@@ -23,13 +23,11 @@
 </template>
 
 <script setup>
-const props = defineProps(['isMenuActive']);
+import { useIsMenuActive } from '~/stores/isMenuActive.js';
 
-const emit = defineEmits(['changeBtnState']);
+const store = useIsMenuActive();
 
-function handleClick() {
-    emit('changeBtnState');
-}
+console.log(store.menuActive);
 </script>
 
 <style scoped>

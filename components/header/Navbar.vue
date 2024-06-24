@@ -2,7 +2,7 @@
     <nav class="hidden items-center gap-8 md:flex">
         <NuxtLink
             v-for="link in navLinks"
-            :to="link.slug"
+            :to="localePath(link.slug)"
             :key="link.text"
             class="text-sm font-semibold text-secondary-400 transition-colors hover:text-secondary-100"
             >{{ link.text }}</NuxtLink
@@ -13,8 +13,10 @@
             aria-label="decorative"
             orientation="vertical"
         ></div>
-        <!-- <HeaderLangDropdown /> -->
-        <BaseButtonLink class="primary hidden lg:flex" to="/contact-us"
+        <LanguageSelect classList="hidden lg:flex" />
+        <BaseButtonLink
+            class="primary hidden lg:flex"
+            :to="localePath(`/contact-us`)"
             >Contact us</BaseButtonLink
         >
     </nav>
@@ -22,6 +24,9 @@
 
 <script setup>
 import navLinks from '~/data/navLinks.json';
+import LanguageSelect from '../base/LanguageSelect.vue';
+
+const localePath = useLocalePath();
 </script>
 
 <style scoped></style>

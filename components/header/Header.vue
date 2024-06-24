@@ -4,15 +4,13 @@
         :class="{ 'backdrop-blur': isBlured }"
     >
         <div class="header-layout flex items-center justify-between py-4">
-            <NuxtLink to="/" class="bg-dark">
+            <NuxtLink :to="localePath('/')" class="bg-dark">
                 <KarashLogo />
             </NuxtLink>
             <Navbar />
-            <HeaderDrawerButton
-                @changeBtnState="handleEvent"
-                :isMenuActive="isMenuActive"
-            />
-            <HeaderMobileDrawer :isMenuActive="isMenuActive" />
+            <HeaderDrawerButton />
+            <HeaderMobileDrawer />
+            <LanguageSelect classList="md:hidden" />
         </div>
     </header>
 </template>
@@ -21,6 +19,9 @@
 import Navbar from '~/components/header/Navbar.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import KarashLogo from '~/components/base/KarashLogo.vue';
+import LanguageSelect from '../base/LanguageSelect.vue';
+
+const localePath = useLocalePath();
 
 const isMenuActive = ref(false);
 const isBlured = ref(false);
