@@ -7,7 +7,16 @@ export default defineNuxtConfig({
         'radix-vue/nuxt',
         '@nuxt/image',
         '@pinia/nuxt',
+        'nuxt-swiper',
     ],
+
+    // swiper: {
+    //     // Swiper options
+    //     //----------------------
+    //     // prefix: 'Swiper',
+    //     // styleLang: 'css',
+    //     // modules: ['navigation', 'pagination'], // all modules are imported by default
+    // },
 
     // Internationalization Routing Options
     i18n: {

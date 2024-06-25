@@ -12,13 +12,15 @@
                 {{ $t('home_projects.btn') }}</ButtonLink
             >
         </div>
-        <ProjectsCarousel />
+        <!-- <ProjectsCarousel /> -->
+        <NewProjectCarousel />
     </section>
 </template>
 
 <script setup>
 import ButtonLink from '~/components/base/ButtonLink.vue';
-import ProjectsCarousel from '~/components/home/ProjectsCarousel.vue';
+import NewProjectCarousel from '~/components/home/NewProjectCarousel.vue';
+// import ProjectsCarousel from '~/components/home/ProjectsCarousel.vue';
 </script>
 
 <style scoped>

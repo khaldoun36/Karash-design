@@ -1,9 +1,9 @@
 <template>
     <div class="map">
         <svg
-            width="685"
-            height="695"
-            viewBox="0 0 585 595"
+            width="585"
+            height="595"
+            viewBox="0 0 565 595"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >

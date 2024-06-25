@@ -11,8 +11,6 @@
 import Footer from '~/components/base/Footer.vue';
 import NewHeader from './components/header/NewHeader.vue';
 
-const { locale, setLocale } = useI18n();
-
 const head = useLocaleHead({
     addDirAttribute: true, // Adds dir
     addSeoAttributes: true, // Adds lang

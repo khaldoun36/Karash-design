@@ -36,16 +36,16 @@ const localePath = useLocalePath();
 
 const { y } = useWindowScroll();
 
-const throttled = refThrottled(y, 250);
-
 const isBlurActive = ref(false);
 
-watchEffect(() => {
-    if (throttled.value > 20) {
-        isBlurActive.value = true;
-    } else if (throttled.value < 10) {
-        isBlurActive.value = false;
-    }
+onMounted(() => {
+    watchEffect(() => {
+        if (y.value > 20) {
+            isBlurActive.value = true;
+        } else {
+            isBlurActive.value = false;
+        }
+    });
 });
 </script>
 
