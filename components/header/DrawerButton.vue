@@ -1,6 +1,6 @@
 <template>
     <button
-        class="btn-container relative order-last size-10 cursor-pointer transition-transform md:hidden"
+        class="btn-container relative order-last size-10 cursor-pointer transition-transform lg:hidden"
         :class="{ active: store.menuActive }"
         aria-label="Hamburger menu"
         @click="store.toggleMenu"
@@ -26,8 +26,6 @@
 import { useIsMenuActive } from '~/stores/isMenuActive.js';
 
 const store = useIsMenuActive();
-
-console.log(store.menuActive);
 </script>
 
 <style scoped>

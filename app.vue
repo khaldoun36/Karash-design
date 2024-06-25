@@ -1,6 +1,6 @@
 <template>
     <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
-        <Header />
+        <NewHeader />
         <div class="content-grid">
             <NuxtPage />
             <Footer />
@@ -8,8 +8,8 @@
     </Html>
 </template>
 <script setup>
-import Header from '~/components/header/Header.vue';
 import Footer from '~/components/base/Footer.vue';
+import NewHeader from './components/header/NewHeader.vue';
 
 const { locale, setLocale } = useI18n();
 
