@@ -36,26 +36,32 @@ const store = useIsMenuActive();
         position: fixed;
         overflow: hidden;
         inset: 0;
-        height: 0;
+        max-height: 0;
         flex-direction: column;
         gap: theme('spacing.10');
         align-items: start;
-        /* justify-content: center; */
         justify-content: start;
-        background-color: theme('colors.secondary.800/60%');
-        backdrop-filter: blur(theme('backdropBlur.md'));
 
         /* Transition CSS */
-        transform: translateZ(0); /* Force hardware*/
-        transition:
-            height 0.7s ease,
-            backdrop-filter 0.7s ease;
-        transition: all;
-        transition-duration: 700ms;
+        transform: translateZ(0); /* Force hardware acceleration */
+        transition: max-height 0.7s ease;
+    }
+
+    .mobile-nav::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        min-width: 100%;
+        min-height: 100vh;
+        z-index: -1;
+
+        -webkit-backdrop-filter: blur(theme('backdropBlur.md'));
+        backdrop-filter: blur(theme('backdropBlur.md'));
+        background-color: theme('colors.secondary.800/60%');
     }
 
     .mobile-nav.active {
-        height: 100vh;
+        max-height: 100vh;
     }
 
     .mobile-nav a {

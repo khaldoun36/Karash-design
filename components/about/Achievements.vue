@@ -6,13 +6,17 @@
             <p class="lg:text-8xl text-5xl font-light text-secondary-50">
                 100+
             </p>
-            <p class="text-balance text-xs text-secondary-400 lg:text-xl">
+            <p
+                class="min-h-12 text-balance text-center text-xs text-secondary-400 lg:text-xl"
+            >
                 {{ $t('pages.about.sections.numbers.successfulProjects') }}
             </p>
         </div>
         <div class="flex flex-col items-center justify-center gap-3">
             <p class="lg:text-8xl text-5xl font-light text-secondary-50">20+</p>
-            <p class="text-balance text-xs text-secondary-400 lg:text-xl">
+            <p
+                class="min-h-12 text-balance text-center text-xs text-secondary-400 lg:text-xl"
+            >
                 {{ $t('pages.about.sections.numbers.experience') }}
             </p>
         </div>
@@ -20,7 +24,9 @@
             class="flex flex-col items-center justify-center gap-3 justify-self-end"
         >
             <p class="lg:text-8xl text-5xl font-light text-secondary-50">9+</p>
-            <p class="text-balance text-xs text-secondary-400 lg:text-xl">
+            <p
+                class="min-h-12 text-balance text-center text-xs text-secondary-400 lg:text-xl"
+            >
                 {{ $t('pages.about.sections.numbers.locations') }}
             </p>
         </div>
@@ -29,4 +35,8 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+div {
+    direction: ltr !important;
+}
+</style>

@@ -58,6 +58,9 @@ onMounted(() => {
     width: 100%;
 
     z-index: -1;
+
+    -webkit-backdrop-filter: blur(theme('backdropBlur.md'));
+
     background-color: theme('colors.secondary.700/10%');
     backdrop-filter: blur(theme('backdropBlur.md'));
 }

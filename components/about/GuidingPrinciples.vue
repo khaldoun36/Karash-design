@@ -1,7 +1,7 @@
 <template>
     <section class="space-y-16 py-20 lg:py-28">
         <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
-            Our Guiding Principles
+            {{ $t('pages.about.sections.guidingPrinciples.title') }}
         </h2>
         <AccordionRoot
             default-value="item-1"

@@ -13,13 +13,15 @@
             >
         </div>
         <!-- <ProjectsCarousel /> -->
-        <NewProjectCarousel />
+        <!-- <NewProjectCarousel /> -->
+        <NewCarousel />
     </section>
 </template>
 
 <script setup>
 import ButtonLink from '~/components/base/ButtonLink.vue';
 import NewProjectCarousel from '~/components/home/NewProjectCarousel.vue';
+import NewCarousel from '~/components/home/NewCarousel.vue';
 // import ProjectsCarousel from '~/components/home/ProjectsCarousel.vue';
 </script>
 

@@ -7,7 +7,6 @@ export default defineNuxtConfig({
         'radix-vue/nuxt',
         '@nuxt/image',
         '@pinia/nuxt',
-        'nuxt-swiper',
     ],
 
     // swiper: {
