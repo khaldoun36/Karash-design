@@ -1,8 +1,15 @@
 {
     "shared": {
         "buttons": {
-            "cta": "",
-            "viewProjects": ""
+            "cta": "Contact us",
+            "viewProjects": "View projects"
+        },
+        "navLinks": {
+            "link_1": "Home",
+            "link_2": "Projects",
+            "link_3": "Products and services",
+            "link_4": "About us",
+            "link_5": "After sale"
         }
     },
 

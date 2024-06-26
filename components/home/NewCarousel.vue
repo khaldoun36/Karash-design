@@ -22,18 +22,27 @@
         ></div>
         <button
             class="aspect-square w-full rounded-full bg-secondary-700/10 p-4"
+            @click="toggleAutoPlay"
         >
-            <Icon name="ph:play" size="32px" class="text-secondary-600" />
+            <Icon
+                :name="isAutoPlaying ? 'ph:pause' : 'ph:play'"
+                size="30"
+                class="text-secondary-500/90"
+            />
+            <!-- <NewCarouselPlayBtn /> -->
         </button>
     </div>
 </template>
 
 <script setup>
+import NewCarouselPlayBtn from './NewCarouselPlayBtn.vue';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
 register();
 
+const isAutoPlaying = ref(true);
+let swiperInstance = null;
 // swiper parameters
 const swiperParams = {
     slidesPerView: 1,
@@ -43,7 +52,7 @@ const swiperParams = {
         disableOnInteraction: false,
     },
     spaceBetween: 32,
-    speed: 600, // Adjust the speed for smoother transitions
+    speed: 600, // Adjust the seed for smoother transitions
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -66,21 +75,37 @@ const swiperParams = {
             if (swiperEl.swiper.isEnd) {
                 swiperEl.swiper.autoplay.stop();
             }
-            // else if (!swiperEl.swiper.isEnd) {
-            //     swiperEl.swiper.autoplay.start();
-            // }
         },
     },
 };
 
-onMounted(() => {
-    // swiper element
-    const swiperEl = document.querySelector('swiper-container');
-    // now we need to assign all parameters to Swiper element
-    Object.assign(swiperEl, swiperParams);
+const toggleAutoPlay = () => {
+    if (!swiperInstance) return;
 
-    // and now initialize it
+    if (isAutoPlaying.value) {
+        swiperInstance.autoplay.stop();
+        isAutoPlaying.value = false;
+    } else {
+        swiperInstance.autoplay.start();
+        isAutoPlaying.value = true;
+    }
+};
+
+onMounted(() => {
+    const swiperEl = document.querySelector('swiper-container');
+    Object.assign(swiperEl, swiperParams);
     swiperEl.initialize();
+
+    // Store the Swiper instance
+    swiperInstance = swiperEl.swiper;
+
+    // Update autoplay state when Swiper reaches the end
+    swiperInstance.on('reachEnd', () => {
+        if (swiperInstance.autoplay.running) {
+            swiperInstance.autoplay.stop();
+            isAutoPlaying.value = false;
+        }
+    });
 });
 </script>
 

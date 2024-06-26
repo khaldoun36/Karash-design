@@ -1,7 +1,7 @@
 <template>
     <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
-        <NewHeader />
-        <div class="content-grid">
+        <div class="full-width content-grid">
+            <NewHeader />
             <NuxtPage />
             <Footer />
         </div>

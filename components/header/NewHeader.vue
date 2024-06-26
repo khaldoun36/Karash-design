@@ -17,7 +17,7 @@
                 <ButtonLink
                     :to="localePath(`/contact-us`)"
                     class="primary hidden lg:flex"
-                    >Contact us</ButtonLink
+                    >{{ $t('shared.buttons.cta') }}</ButtonLink
                 >
                 <DrawerButton />
             </div>
@@ -35,9 +35,7 @@ import DrawerButton from './DrawerButton.vue';
 const localePath = useLocalePath();
 
 const { y } = useWindowScroll();
-
 const isBlurActive = ref(false);
-
 onMounted(() => {
     watchEffect(() => {
         if (y.value > 20) {
@@ -60,7 +58,6 @@ onMounted(() => {
     z-index: -1;
 
     -webkit-backdrop-filter: blur(theme('backdropBlur.md'));
-
     background-color: theme('colors.secondary.700/10%');
     backdrop-filter: blur(theme('backdropBlur.md'));
 }

@@ -16,14 +16,18 @@
 
 <script setup>
 const localePath = useLocalePath();
+const { t } = useI18n();
 
-const navLinks = [
-    { slug: '/', text: 'Home' },
-    { slug: '/', text: 'Projects' },
-    { slug: '/', text: 'Products and services' },
-    { slug: '/about-us', text: 'About us' },
-    { slug: '/after-sale', text: 'After sale' },
-];
+const navLinks = computed(() => [
+    {
+        slug: '/',
+        text: `${t('shared.navLinks.link_1')}`,
+    },
+    { slug: '/', text: `${t('shared.navLinks.link_2')}` },
+    { slug: '/', text: `${t('shared.navLinks.link_3')}` },
+    { slug: '/about-us', text: `${t('shared.navLinks.link_4')}` },
+    { slug: '/after-sale', text: `${t('shared.navLinks.link_5')}` },
+]);
 
 import { useIsMenuActive } from '~/stores/isMenuActive.js';
 
