@@ -1,7 +1,7 @@
 <template>
     <DropdownMenuRoot v-model:open="toggleState">
+        <!--   aria-label="Customise options" -->
         <DropdownMenuTrigger
-            aria-label="Customise options"
             :class="
                 twMerge(
                     `flex items-center justify-center gap-2 text-secondary-400`,

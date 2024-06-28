@@ -56,11 +56,10 @@ export default defineNuxtConfig({
         defaultLocale: 'en',
     },
 
-    // Render rules — pre-render ahead of time
-    // routeRules: {
-    //     '/': { prerender: true },
-    //     '/about-us': { prerender: true },
-    //     '/after-sale': { prerender: true },
-    //     '/contact-us': { prerender: true },
-    // },
+    vue: {
+        compilerOptions: {
+            isCustomElement: (tag) =>
+                ['swiper-container', 'swiper-slide'].includes(tag),
+        },
+    },
 });

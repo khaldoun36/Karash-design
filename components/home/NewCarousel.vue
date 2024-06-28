@@ -29,15 +29,14 @@
                 size="30"
                 class="text-secondary-500/90"
             />
-            <!-- <NewCarouselPlayBtn /> -->
         </button>
     </div>
 </template>
 
 <script setup>
-import NewCarouselPlayBtn from './NewCarouselPlayBtn.vue';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
+
 // register Swiper custom elements
 register();
 

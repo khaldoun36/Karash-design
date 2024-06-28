@@ -5,7 +5,7 @@
         <h1
             class="text-balance text-4xl font-semibold text-secondary-50 md:max-w-[45ch] lg:text-6xl"
         >
-            Your Satisfaction, Our Priority: After-Sale Assistance
+            {{ $t('pages.afterSale.title') }}
         </h1>
 
         <NuxtImg
