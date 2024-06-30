@@ -8,21 +8,14 @@ export default defineNuxtConfig({
         'radix-vue/nuxt',
         '@nuxt/image',
         '@pinia/nuxt',
+        '@nuxt/content',
     ],
-
-    // swiper: {
-    //     // Swiper options
-    //     //----------------------
-    //     // prefix: 'Swiper',
-    //     // styleLang: 'css',
-    //     // modules: ['navigation', 'pagination'], // all modules are imported by default
-    // },
 
     // Internationalization Routing Options
     i18n: {
         lazy: true,
         langDir: 'locales',
-        strategy: 'prefix_except_default',
+        strategy: 'prefix',
         locales: [
             {
                 code: 'en',
@@ -62,4 +55,26 @@ export default defineNuxtConfig({
                 ['swiper-container', 'swiper-slide'].includes(tag),
         },
     },
+
+    hooks: {
+        'pages:extend'(pages) {
+            const pagesToRemove: NuxtPage[] = [];
+            pages.forEach((page) => {
+                if (page.path.includes('component')) pagesToRemove.push(page);
+            });
+
+            pagesToRemove.forEach((page: NuxtPage) => {
+                pages.splice(pages.indexOf(page), 1);
+            });
+        },
+    },
+
+    components: [
+        '~/components',
+        {
+            path: '~/pages',
+            pattern: '*/components/**',
+            pathPrefix: false,
+        },
+    ],
 });

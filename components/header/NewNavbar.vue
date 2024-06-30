@@ -16,6 +16,7 @@
 
 <script setup>
 const localePath = useLocalePath();
+
 const { t } = useI18n();
 
 const navLinks = computed(() => [
@@ -23,7 +24,7 @@ const navLinks = computed(() => [
         slug: '/',
         text: `${t('shared.navLinks.link_1')}`,
     },
-    { slug: '/', text: `${t('shared.navLinks.link_2')}` },
+    { slug: '/projects', text: `${t('shared.navLinks.link_2')}` },
     { slug: '/', text: `${t('shared.navLinks.link_3')}` },
     { slug: '/about-us', text: `${t('shared.navLinks.link_4')}` },
     { slug: '/after-sale', text: `${t('shared.navLinks.link_5')}` },

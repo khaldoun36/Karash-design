@@ -11,7 +11,7 @@
             src="/images/about-us-header.jpg"
             alt="Primary background image"
             class="full-width absolute left-2/4 top-2/4 -z-10 min-h-full min-w-full brightness-50"
-            preload="high"
+            preload
             format="webp"
             width="4000"
             height="3008"
@@ -37,13 +37,13 @@
     </section>
     <Achievements />
     <NuxtImg
-        src="/images/about-us-header.jpg"
-        class="full-width aspect-video max-h-[800px] min-w-full object-cover"
+        src="/images/about-us-full.jpg"
+        class="full-width aspect-video max-h-[800px] min-w-full object-cover object-[center_-100px]"
         alt="An image of the compnay founders and employees"
         loading="lazy"
         densities="x1 x2"
-        width="4000"
-        height="3008"
+        width="5472"
+        height="3648"
         format="webp"
     />
     <GuidingPrinciples />

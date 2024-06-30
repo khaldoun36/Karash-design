@@ -112,6 +112,7 @@ onMounted(() => {
 #swiper-1 {
     max-width: calc(100% - 2rem);
     transition: transform 0.6s cubic-bezier(0.73, -0.01, 0.83, 0.67); /* Adding smooth ease-in transition */
+    direction: ltr !important;
 }
 
 :global(.swiper-pagination-bullet) {

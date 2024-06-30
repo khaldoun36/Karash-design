@@ -139,6 +139,16 @@
                     "paragraphTwo": "Our commitment to excellence is reflected in our rigorous quality policy, which involves continuous inspection, stringent work control, and progress monitoring. We are deeply committed to ensuring customer satisfaction with the services we provide, always striving to exceed expectations through our attention to detail and dedication to superior craftsmanship."
                 }
             }
+        },
+        "projects": {
+            "title": "Projects that Inspire.",
+            "categories": {
+                "all": "All",
+                "interiorDecors": "Interior Decors",
+                "modernKitchens": "Modern Kitchens",
+                "bedrooms": "Bedrooms",
+                "classicKitchens": "Classic Kitchens"
+            }
         }
     }
 }
