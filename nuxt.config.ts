@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-    ssr: true,
     modules: [
         '@nuxtjs/tailwindcss',
         'nuxt-icon',
@@ -77,4 +76,10 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+    nitro: {
+        prerender: {
+            crawlLinks: true,
+            routes: ['/'],
+        },
+    },
 });
