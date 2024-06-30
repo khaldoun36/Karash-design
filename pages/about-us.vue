@@ -37,7 +37,7 @@
     </section>
     <Achievements />
     <NuxtImg
-        src="/images/about-us-full.jpg"
+        src="/images/about-us-full.jpeg"
         class="full-width aspect-video max-h-[800px] min-w-full object-cover object-[center_-100px]"
         alt="An image of the compnay founders and employees"
         loading="lazy"
