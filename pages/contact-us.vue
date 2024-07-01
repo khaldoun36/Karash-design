@@ -3,7 +3,7 @@
         class="contact-us full-width content-grid hero-section full-width content-grid relative overflow-clip pb-20 pt-[152px] 2xl:pb-28 2xl:pt-[184px]"
     >
         <h1
-            class="text-balance text-5xl font-semibold text-secondary-50 md:max-w-[25ch] lg:text-8xl"
+            class="lg:text-8xl text-balance text-5xl font-semibold text-secondary-50 md:max-w-[25ch]"
         >
             Let's talk
         </h1>
@@ -23,7 +23,7 @@
             height="3008"
         />
     </main>
-    <ContactForm />
+    <ContactForm :messagePlaceHolder="$t('shared.form.ctaMessage')" />
     <LocationsList />
 </template>
 

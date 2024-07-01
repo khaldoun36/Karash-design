@@ -10,6 +10,31 @@
             "link_3": "Products and services",
             "link_4": "About us",
             "link_5": "After sale"
+        },
+
+        "form": {
+            "title": "Direct Contact",
+            "email": "Email",
+            "phone": "Phone",
+            "hours": "Administrative Hours",
+            "days": "Saturday to Thursday",
+            "time": "9AM - 6PM",
+            "firstName": "Full Name",
+            "emailAddress": "Email Address",
+            "phoneNumber": "Phone Number",
+            "afterSaleMessage": "Describe your problem ",
+            "ctaMessage": "Your message",
+            "formBtn": "Send message"
+        },
+        "cityName": {
+            "erbil": "Erbil",
+            "baghdad": "Baghdad",
+            "alRamadi": "Al-Ramadi",
+            "soran": "Soran",
+            "kalar": "Kalar",
+            "karbala": "Karbala",
+            "najaf": "Najaf",
+            "Mosul": "Mosul"
         }
     },
 

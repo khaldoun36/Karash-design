@@ -33,10 +33,10 @@
             {{ $t('home_hero_description') }}
         </p>
         <div class="hero-btn-container mt-8 flex items-center">
-            <BaseButtonLink class="primary">{{
+            <BaseButtonLink class="primary" :to="localePath(`/contact-us`)">{{
                 $t('home_hero_btn_group.btn_cta')
             }}</BaseButtonLink>
-            <BaseButtonLink class="secondary">{{
+            <BaseButtonLink class="secondary" :to="localePath(`/projects`)">{{
                 $t('home_hero_btn_group.btn_view_projects')
             }}</BaseButtonLink>
         </div>
@@ -44,6 +44,7 @@
 </template>
 
 <script setup>
+const localePath = useLocalePath();
 onMounted(() => {
     const images = document.querySelectorAll('.img-container img');
     let currentIndex = 0;

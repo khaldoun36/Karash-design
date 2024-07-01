@@ -5,7 +5,7 @@
             name="name"
             v-model="name"
             class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
-            placeholder="Full Name"
+            :placeholder="$t('shared.form.firstName')"
             required
         />
 
@@ -15,7 +15,7 @@
                 name="email"
                 v-model="email"
                 class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
-                placeholder="Emaill Address"
+                :placeholder="$t('shared.form.emailAddress')"
                 required
             />
             <input
@@ -23,7 +23,7 @@
                 name="phoneNumber"
                 v-model="phoneNumber"
                 class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
-                placeholder="Phone Number"
+                :placeholder="$t('shared.form.phoneNumber')"
                 required
             />
         </div>
@@ -38,7 +38,7 @@
             type="submit"
             class="btn primary flex h-10 cursor-pointer items-center justify-center gap-1.5 rounded-sm pl-6 pr-[19px] text-sm font-medium text-secondary-50 transition-colors active:scale-95"
         >
-            Send Message
+            {{ $t('shared.form.formBtn') }}
         </button>
     </form>
 </template>

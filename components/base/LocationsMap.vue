@@ -190,7 +190,7 @@
                         y="215"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Kalar
+                        {{ $t('shared.cityName.kalar') }}
                     </text>
                 </g>
 
@@ -222,7 +222,7 @@
                         y="119"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Erbil
+                        {{ $t('shared.cityName.erbil') }}
                     </text>
                 </g>
 
@@ -238,7 +238,7 @@
                         y="128"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Mosul
+                        {{ $t('shared.cityName.mosul') }}
                     </text>
                 </g>
 
@@ -254,7 +254,7 @@
                         y="320"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Al-Ramadi
+                        {{ $t('shared.cityName.alRamadi') }}
                     </text>
                 </g>
 
@@ -270,7 +270,7 @@
                         y="447"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Najaf
+                        {{ $t('shared.cityName.najaf') }}
                     </text>
                 </g>
 
@@ -286,7 +286,7 @@
                         y="380"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Karbala
+                        {{ $t('shared.cityName.karbala') }}
                     </text>
                 </g>
                 <g
@@ -301,7 +301,7 @@
                         y="59"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Soran
+                        {{ $t('shared.cityName.soran') }}
                     </text>
                 </g>
                 <g
@@ -316,7 +316,7 @@
                         y="330"
                         class="cursor-pointer fill-secondary-400 p-1 text-base hover:fill-secondary-50"
                     >
-                        Baghdad
+                        {{ $t('shared.cityName.baghdad') }}
                     </text>
                 </g>
             </g>

@@ -7,21 +7,26 @@
                 <h2
                     class="mb-1.5 text-base font-semibold text-secondary-50 lg:text-lg"
                 >
-                    Direct Contact
+                    {{ $t('shared.form.title') }}
                 </h2>
                 <NuxtLink
                     to="mailto:mainbranch@karash.com"
-                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-50 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-400">Email:</span>
-                    <span> mainbranch@karash.com</span>
+                    <span class="font-normal text-secondary-400"
+                        >{{ $t('shared.form.email') }}:</span
+                    >
+                    <span class="mr-12"> mainbranch@karash.com</span>
                 </NuxtLink>
                 <NuxtLink
                     to="tel:009647503520001"
-                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-50 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-400">Phone:</span>
+                    <span class="font-normal text-secondary-400"
+                        >{{ $t('shared.form.phone') }}:</span
+                    >
                     <span
+                        class="mr-12"
                         :class="{
                             'text-right': locale === 'ku' || locale === 'ar',
                         }"
@@ -31,10 +36,13 @@
                 </NuxtLink>
                 <NuxtLink
                     to="tel:+9647504453841"
-                    class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-50 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-400">Phone:</span>
+                    <span class="font-normal text-secondary-400"
+                        >{{ $t('shared.form.phone') }}:</span
+                    >
                     <span
+                        class="mr-12"
                         :class="{
                             'text-right': locale === 'ku' || locale === 'ar',
                         }"
@@ -47,17 +55,17 @@
                 <h2
                     class="mb-1.5 text-base font-semibold text-secondary-50 lg:text-lg"
                 >
-                    Administrative Hours
+                    {{ $t('shared.form.hours') }}
                 </h2>
                 <p class="text-base font-medium text-secondary-50 lg:text-lg">
                     <span class="font-normal text-secondary-400"
-                        >Saturday to Thursday:</span
+                        >{{ $t('shared.form.days') }}:</span
                     >
-                    9AM – 6PM
+                    {{ $t('shared.form.time') }}
                 </p>
             </div>
         </div>
-        <Form :messagePlaceHolder="messagePlaceHolder" />
+        <Form :messagePlaceHolder="$t('shared.form.afterSaleMessage')" />
     </section>
 </template>
 

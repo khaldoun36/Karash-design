@@ -24,7 +24,7 @@
                 <LocationCard
                     v-for="item in filteredLocations"
                     :key="item.location"
-                    :city="selectedLocation"
+                    :city="item.city"
                     :location="item.location"
                     :locationLink="item.locationLink"
                     :phoneNumber="item.phoneNumber"
@@ -40,13 +40,25 @@ import { ref, computed } from 'vue';
 import LocationCard from '~/components/base/LocationCard.vue';
 import LocationsMap from '~/components/base/LocationsMap.vue';
 import locations_en from '~/data/locations_en.js';
+import locations_ar from '~/data/locations_ar.js';
 
-const selectedLocation = ref('Erbil');
+const { locale } = useI18n();
+
+const locations = computed(() => {
+    if (locale.value === 'en') {
+        return locations_en;
+    } else if (locale.value === 'ar') {
+        return locations_ar;
+    }
+});
+
+const selectedLocation = ref(locations.value[0].locationKey);
 
 const filteredLocations = computed(() =>
-    locations_en.filter(
+    locations.value.filter(
         (entry) =>
-            entry.city.toLowerCase() === selectedLocation.value.toLowerCase()
+            entry.locationKey.toLowerCase() ===
+            selectedLocation.value.toLowerCase()
     )
 );
 
