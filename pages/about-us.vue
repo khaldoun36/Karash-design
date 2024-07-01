@@ -13,6 +13,7 @@
             class="full-width absolute left-2/4 top-2/4 -z-10 min-h-full min-w-full brightness-50"
             preload
             format="webp"
+            quality="70"
             width="4000"
             height="3008"
         />
@@ -44,6 +45,7 @@
         width="5472"
         height="3648"
         format="webp"
+        quality="60"
     />
     <GuidingPrinciples />
 </template>

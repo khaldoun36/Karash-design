@@ -7,7 +7,7 @@
         </h1>
     </main>
     <section class="">
-        <ul class="mx-auto hidden items-center justify-center gap-5 md:flex">
+        <!-- <ul class="mx-auto hidden items-center justify-center gap-5 md:flex">
             <li
                 v-for="item in categories"
                 :key="item.value"
@@ -19,7 +19,7 @@
                     {{ item.text }}
                 </button>
             </li>
-        </ul>
+        </ul> -->
         <ContentList :path="`/${locale}/projects`" v-slot="{ list }">
             <div class="mb-20 mt-16 grid gap-8 md:mb-28 md:grid-cols-2">
                 <ProjectCard
