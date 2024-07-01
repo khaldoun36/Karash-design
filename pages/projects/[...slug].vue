@@ -6,10 +6,12 @@
                 :key="index"
                 :src="img"
                 alt="project image description"
+                format="webp"
+                provider="storyblok"
+                quality="50"
                 :width="getImageDimensions(img).width"
                 :height="getImageDimensions(img).height"
-                loading="lazy"
-                decoding="async"
+                loading="eager"
             />
         </div>
         <div

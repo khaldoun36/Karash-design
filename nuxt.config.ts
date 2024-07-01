@@ -76,10 +76,17 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+
     nitro: {
         prerender: {
             crawlLinks: true,
             routes: ['/'],
+        },
+    },
+
+    image: {
+        storyblok: {
+            baseURL: 'https://a.storyblok.com',
         },
     },
 });

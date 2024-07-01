@@ -10,8 +10,9 @@
                 :width="getImageDimensions(thumbnail).width"
                 :height="getImageDimensions(thumbnail).height"
                 format="webp"
-                loading="lazy"
-                decoding="async"
+                provider="storyblok"
+                quality="50"
+                loading="eager"
             />
             <div class="project-details custom-gradient min-w-full p-8">
                 <p
