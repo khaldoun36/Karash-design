@@ -148,7 +148,8 @@
                 "modernKitchens": "المطابخ الحديثة",
                 "classicKitchens": "المطابخ الكلاسيكية",
                 "bedrooms": "غرف النوم"
-            }
+            },
+            "location": "الموقع"
         }
     }
 }

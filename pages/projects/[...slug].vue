@@ -17,7 +17,7 @@
         <div
             class="content-container sticky-container row-start-1 space-y-4 lg:col-start-2"
         >
-            <div class="sticky-content">
+            <div class="sticky-content space-y-4">
                 <h1
                     class="text-balance text-3xl font-semibold text-secondary-50"
                 >
@@ -29,7 +29,7 @@
                 <div
                     class="flex items-center gap-6 pt-6 text-xl text-secondary-200"
                 >
-                    <p class="">Location:</p>
+                    <p class="">{{ $t('pages.projects.location') }}:</p>
                     <p class="text-secondary-400">{{ data.location }}</p>
                 </div>
             </div>

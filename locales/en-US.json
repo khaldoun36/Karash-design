@@ -148,7 +148,8 @@
                 "modernKitchens": "Modern Kitchens",
                 "bedrooms": "Bedrooms",
                 "classicKitchens": "Classic Kitchens"
-            }
+            },
+            "location": "Location"
         }
     }
 }
