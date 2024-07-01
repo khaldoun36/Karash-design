@@ -21,14 +21,26 @@
                     class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
                 >
                     <span class="font-normal text-secondary-400">Phone:</span>
-                    <span>+964 750 352 0001</span>
+                    <span
+                        :class="{
+                            'text-right': locale === 'ku' || locale === 'ar',
+                        }"
+                        style="direction: ltr !important"
+                        >+964 750 352 0001</span
+                    >
                 </NuxtLink>
                 <NuxtLink
                     to="tel:+9647504453841"
                     class="contact-link text-base font-medium text-secondary-50 lg:text-lg"
                 >
                     <span class="font-normal text-secondary-400">Phone:</span>
-                    <span>+964 750 445 3841</span>
+                    <span
+                        :class="{
+                            'text-right': locale === 'ku' || locale === 'ar',
+                        }"
+                        style="direction: ltr !important"
+                        >+964 750 445 3841</span
+                    >
                 </NuxtLink>
             </div>
             <div class="dministrative-hours flex flex-col gap-2.5">
@@ -58,6 +70,8 @@ const props = defineProps({
         default: 'Message',
     },
 });
+
+const { locale } = useI18n();
 </script>
 
 <style scoped>

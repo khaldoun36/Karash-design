@@ -1,6 +1,7 @@
 <template>
     <section
         class="grid auto-rows-fr content-center gap-8 py-20 md:grid-cols-2 lg:py-28"
+        id="products-and-services"
     >
         <AccordionRoot
             default-value="item-1"
@@ -74,22 +75,19 @@ const accordionItems = [
         value: 'item-1',
         title: `${t('home_services.item_1.title')}`,
         content: `${t('home_services.item_1.description')}`,
-        imageURL:
-            'https://images.unsplash.com/photo-1467921309565-6a8bf128d229?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imageURL: '/images/products_and_services/kitchens.jpeg',
     },
     {
         value: 'item-2',
         title: `${t('home_services.item_2.title')}`,
         content: `${t('home_services.item_2.description')}`,
-        imageURL:
-            'https://plus.unsplash.com/premium_photo-1683888725049-0e7337583bbf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imageURL: '/images/products_and_services/interiors.jpeg',
     },
     {
         value: 'item-3',
         title: `${t('home_services.item_3.title')}`,
         content: `${t('home_services.item_3.description')}`,
-        imageURL:
-            'https://images.unsplash.com/photo-1549089154-ad7b2808944c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imageURL: '/images/products_and_services/wood.jpeg',
     },
 ];
 

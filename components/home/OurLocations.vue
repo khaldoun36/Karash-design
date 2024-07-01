@@ -39,12 +39,12 @@
 import { ref, computed } from 'vue';
 import LocationCard from '~/components/base/LocationCard.vue';
 import LocationsMap from '~/components/base/LocationsMap.vue';
-import storeLocations from '~/data/storeLocations.json';
+import locations_en from '~/data/locations_en.js';
 
 const selectedLocation = ref('Erbil');
 
 const filteredLocations = computed(() =>
-    storeLocations.filter(
+    locations_en.filter(
         (entry) =>
             entry.city.toLowerCase() === selectedLocation.value.toLowerCase()
     )

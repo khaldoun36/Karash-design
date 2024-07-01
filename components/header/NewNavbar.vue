@@ -25,7 +25,7 @@ const navLinks = computed(() => [
         text: `${t('shared.navLinks.link_1')}`,
     },
     { slug: '/projects', text: `${t('shared.navLinks.link_2')}` },
-    { slug: '/', text: `${t('shared.navLinks.link_3')}` },
+    { slug: '/#products-and-services', text: `${t('shared.navLinks.link_3')}` },
     { slug: '/about-us', text: `${t('shared.navLinks.link_4')}` },
     { slug: '/after-sale', text: `${t('shared.navLinks.link_5')}` },
 ]);

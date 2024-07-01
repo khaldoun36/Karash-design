@@ -19,7 +19,13 @@
                 :to="`tel:${phoneNumber}`"
             >
                 <Icon name="ph:phone" size="24px" />
-                <span>{{ phoneNumber }}</span>
+                <span
+                    style="direction: ltr !important"
+                    :class="{
+                        'text-right': locale === 'ku' || locale === 'ar',
+                    }"
+                    >{{ phoneNumber }}</span
+                >
             </NuxtLink>
         </div>
     </div>
@@ -32,6 +38,8 @@ const props = defineProps({
     phoneNumber: String,
     locationLink: String,
 });
+
+const { locale } = useI18n();
 </script>
 
 <style scoped>

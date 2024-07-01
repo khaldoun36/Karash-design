@@ -3,11 +3,12 @@
         <h2
             class="max-w-[15ch] text-3xl font-semibold text-secondary-50 lg:text-5xl"
         >
-            Visit Us at One of Our Locations
+            {{ $t('pages.afterSale.locationsTitle') }}
         </h2>
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- item.city -->
             <LocationCard
-                v-for="item in storeLocations"
+                v-for="item in locations"
                 :city="item.city"
                 :location="item.location"
                 :locationLink="item.locationLink"
@@ -19,8 +20,20 @@
 </template>
 
 <script setup>
-import storeLocations from '~/data/storeLocations.json';
+import locations_en from '~/data/locations_en.js';
+import locations_ar from '~/data/locations_ar.js';
+
 import LocationCard from '~/components/base/LocationCard.vue';
+
+const { locale } = useI18n();
+
+const locations = computed(() => {
+    if (locale.value === 'en') {
+        return locations_en;
+    } else if (locale.value === 'ar') {
+        return locations_ar;
+    }
+});
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
