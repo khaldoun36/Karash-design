@@ -4,17 +4,43 @@
         id="swiper-1"
         init="false"
     >
-        <swiper-slide
-            v-for="n in 5"
-            :key="n"
-            class="w-fit overflow-hidden"
-            id="swiper-slide"
-        >
-            <img
-                src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="khaldoion block aspect-video min-w-full object-cover"
-            />
-        </swiper-slide>
+        <ContentList :path="`/${locale}/projects`" v-slot="{ list }">
+            <!--  :slug="normalizePath(article._path)" -->
+            <swiper-slide
+                v-for="article in list.slice(0, 5)"
+                :key="article._path"
+                class="w-fit overflow-hidden"
+                id="swiper-slide"
+            >
+                <NuxtLink :to="normalizePath(article._path)" class="block">
+                    <article
+                        class="group relative flex aspect-video min-w-full cursor-pointer items-end object-cover"
+                    >
+                        <NuxtImg
+                            :src="article.thumbnail"
+                            class="absolute inset-0 -z-10 aspect-video min-h-full min-w-full overflow-clip object-cover"
+                        />
+                        <div
+                            class="custom-gradient flex min-w-full p-8"
+                            :class="{
+                                'justify-end':
+                                    locale === 'ar' || locale === 'ku',
+                            }"
+                        >
+                            <h2
+                                class="max-w-[25ch] text-balance text-3xl font-semibold text-secondary-50 group-hover:underline lg:text-5xl"
+                                :class="{
+                                    'text-right':
+                                        locale === 'ar' || locale === 'ku',
+                                }"
+                            >
+                                {{ article.title }}
+                            </h2>
+                        </div>
+                    </article>
+                </NuxtLink>
+            </swiper-slide>
+        </ContentList>
     </swiper-container>
     <div class="flex items-center gap-3 justify-self-center">
         <div
@@ -35,8 +61,12 @@
 
 <script setup>
 // import function to register Swiper custom elements
+
+import normalizePath from '~/utils/normalizePath';
+
 import { register } from 'swiper/element/bundle';
 
+const { locale } = useI18n();
 // register Swiper custom elements
 register();
 
@@ -113,6 +143,14 @@ onMounted(() => {
     max-width: calc(100% - 2rem);
     transition: transform 0.6s cubic-bezier(0.73, -0.01, 0.83, 0.67); /* Adding smooth ease-in transition */
     direction: ltr !important;
+}
+
+.custom-gradient {
+    background: linear-gradient(
+        360deg,
+        hsl(240 4% 16% / 0.5) 60%,
+        hsl(240 4% 55% / 0) 100%
+    );
 }
 
 :global(.swiper-pagination-bullet) {
