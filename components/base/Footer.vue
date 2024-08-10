@@ -1,12 +1,12 @@
 <template>
     <footer
-        class="flex flex-col items-center justify-between gap-8 border-t border-white/10 py-6 md:flex-row"
+        class="flex flex-col items-center justify-between gap-8 border-t border-black/15 py-6 md:flex-row"
     >
         <NuxtLink :to="localePath(`/`)" class="w-min overflow-clip">
             <KarashLogo class="max-w-min" />
         </NuxtLink>
 
-        <p class="text-base font-medium text-secondary-400">
+        <p class="text-base font-medium text-secondary-500">
             All rights reserved &copy; {{ new Date().getFullYear() }}
         </p>
         <SocialLinks size="32px" />

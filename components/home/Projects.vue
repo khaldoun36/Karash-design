@@ -5,7 +5,7 @@
         <div
             class="flex flex-col items-start gap-6 lg:flex-row lg:items-baseline lg:justify-between"
         >
-            <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
+            <h2 class="text-3xl font-semibold text-secondary-800 lg:text-5xl">
                 {{ $t('home_projects.title') }}
             </h2>
             <ButtonLink class="secondary" className="pl-0 lg:pl-6">

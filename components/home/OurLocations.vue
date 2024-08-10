@@ -1,15 +1,15 @@
 <template>
     <section class="locations space-y-16 py-20 lg:py-28">
-        <h2 class="text-3xl font-semibold text-secondary-50 lg:text-5xl">
+        <h2 class="text-3xl font-semibold text-secondary-800 lg:text-5xl">
             {{ $t('home_locations.title_1') }} <br />{{
                 $t('home_locations.title_2')
             }}
         </h2>
-        <div
-            class="mobile-locations grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:hidden"
-        >
+        <!-- Mobile Locations -->
+        <!-- xl:hidden -->
+        <div class="mobile-locations grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <LocationCard
-                v-for="item in storeLocations"
+                v-for="item in locations"
                 :city="item.city"
                 :location="item.location"
                 :locationLink="item.locationLink"
@@ -17,7 +17,9 @@
                 :key="item.phoneNumber"
             />
         </div>
-        <div class="locations hidden grid-cols-2 gap-8 xl:grid">
+        <!-- desktop locations -->
+        <!-- xl:grid -->
+        <div class="locations hidden grid-cols-2 gap-8">
             <div
                 class="desktop-locations grid grid-cols-2 content-center gap-8"
             >

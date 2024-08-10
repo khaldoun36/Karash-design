@@ -57,8 +57,21 @@ onMounted(() => {
 
     z-index: -1;
 
-    -webkit-backdrop-filter: blur(theme('backdropBlur.md'));
-    background-color: theme('colors.secondary.700/10%');
-    backdrop-filter: blur(theme('backdropBlur.md'));
+    /* -webkit-backdrop-filter: blur(theme('backdropBlur.md')); */
+    /* backdrop-filter: blur(theme('backdropBlur.md')); */
+    background-color: theme('colors.white');
+    box-shadow: var(--perfect-shadow) !important;
+}
+
+.header_root.active nav > * {
+    color: theme('colors.secondary.600/80%') !important;
+}
+
+.header_root.active nav > *:hover {
+    color: theme('colors.secondary.800') !important;
+}
+
+.header_root.active .language-select > * {
+    color: theme('colors.secondary.600/80%') !important;
 }
 </style>

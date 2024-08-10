@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="slug">
         <article
-            class="custom-gradient group relative flex aspect-square flex-col items-start justify-end gap-6 overflow-clip rounded-[2px]"
+            class="perfect-shadow custom-gradient group relative flex aspect-square flex-col items-start justify-end gap-6 overflow-clip rounded-[2px]"
         >
             <NuxtImg
                 :src="thumbnail"
@@ -15,9 +15,7 @@
                 loading="eager"
             />
             <div class="project-details custom-gradient min-w-full p-8">
-                <p
-                    class="text-base font-semibold text-secondary-400 md:text-lg"
-                >
+                <p class="text-base text-secondary-300 md:text-lg">
                     {{ projectCategory }}
                 </p>
                 <h2

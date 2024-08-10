@@ -1,7 +1,7 @@
 <template>
     <section class="space-y-16 py-20 lg:py-28">
         <h2
-            class="max-w-[15ch] text-3xl font-semibold text-secondary-50 lg:text-5xl"
+            class="max-w-[15ch] text-3xl font-semibold text-secondary-800 lg:text-5xl"
         >
             {{ $t('pages.afterSale.locationsTitle') }}
         </h2>

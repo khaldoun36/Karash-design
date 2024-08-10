@@ -19,18 +19,20 @@
         >
             <div class="sticky-content space-y-4">
                 <h1
-                    class="text-balance text-3xl font-semibold text-secondary-50"
+                    class="text-balance text-3xl font-semibold text-secondary-800"
                 >
                     {{ data.title }}
                 </h1>
-                <p class="text-base text-secondary-400">
+                <p class="text-base text-secondary-500">
                     {{ data.description }}
                 </p>
                 <div
-                    class="flex items-center gap-6 pt-6 text-xl text-secondary-200"
+                    class="flex items-center gap-6 pt-6 text-xl text-secondary-400"
                 >
                     <p class="">{{ $t('pages.projects.location') }}:</p>
-                    <p class="text-secondary-400">{{ data.location }}</p>
+                    <p class="font-medium text-secondary-500">
+                        {{ data.location }}
+                    </p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative" @click="toggleDropdown">
+    <div class="language-select relative" @click="toggleDropdown">
         <button
             :class="
                 twMerge(
@@ -14,12 +14,12 @@
         </button>
         <div
             v-if="dropdownOpen"
-            class="absolute mt-2 flex min-h-28 flex-col items-start gap-2 rounded-md bg-secondary-800/50 p-8 backdrop-blur-md"
+            class="perfect-shadow absolute mt-4 flex min-h-28 flex-col items-start gap-2 rounded-sm bg-zinc-100 p-8"
         >
             <div
                 v-for="locale in locales"
                 :key="locale.code"
-                class="text-sm text-secondary-50"
+                class="text-sm text-secondary-800"
             >
                 <NuxtLink :to="switchLocalePath(locale.code)">
                     {{ locale.name }}

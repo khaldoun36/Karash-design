@@ -4,7 +4,7 @@
             type="text"
             name="name"
             v-model="name"
-            class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
+            class="border-b border-black/15 bg-transparent p-4 text-base text-secondary-500 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
             :placeholder="$t('shared.form.firstName')"
             required
         />
@@ -14,7 +14,7 @@
                 type="email"
                 name="email"
                 v-model="email"
-                class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
+                class="border-b border-black/15 bg-transparent p-4 text-base text-secondary-500 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
                 :placeholder="$t('shared.form.emailAddress')"
                 required
             />
@@ -22,7 +22,7 @@
                 type="number"
                 name="phoneNumber"
                 v-model="phoneNumber"
-                class="border-b border-white/10 bg-transparent p-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
+                class="border-b border-black/15 bg-transparent p-4 text-base text-secondary-500 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
                 :placeholder="$t('shared.form.phoneNumber')"
                 required
             />
@@ -30,7 +30,7 @@
         <textarea
             name="message"
             v-model="message"
-            class="border-b border-white/10 bg-transparent px-4 pt-4 text-base text-secondary-400 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
+            class="border-b border-black/15 bg-transparent px-4 pt-4 text-base text-secondary-500 focus:rounded-md focus:outline-none focus:outline-primary-200/40 lg:text-lg"
             :placeholder="messagePlaceHolder"
             required
         />

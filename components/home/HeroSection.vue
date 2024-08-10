@@ -1,6 +1,7 @@
 <template>
+    <!-- pb-40 pt-[232px] 2xl:pb-56 2xl:pt-[300px] -->
     <main
-        class="full-width content-grid hero-section relative pb-40 pt-[232px] 2xl:pb-56 2xl:pt-[300px]"
+        class="full-width content-grid hero-section relative grid min-h-dvh place-content-center"
     >
         <div
             class="img-container full-width absolute inset-0 -z-10 h-full w-full overflow-clip"
@@ -27,8 +28,12 @@
                 format="webp"
             />
         </div>
-
-        <HomeTextFlip />
+        <h1
+            class="words-wrapper animated-element max-w-[20ch] pt-28 text-5xl font-semibold text-secondary-50 lg:text-[5rem] lg:leading-none"
+        >
+            {{ $t('home_hero_title.hero_text') }}
+        </h1>
+        <!-- <HomeTextFlip />
         <p class="mt-4 max-w-[65ch] text-base text-secondary-400 lg:text-lg">
             {{ $t('home_hero_description') }}
         </p>
@@ -39,7 +44,7 @@
             <BaseButtonLink class="secondary" :to="localePath(`/projects`)">{{
                 $t('home_hero_btn_group.btn_view_projects')
             }}</BaseButtonLink>
-        </div>
+        </div> -->
     </main>
 </template>
 
@@ -74,5 +79,20 @@ onMounted(() => {
     object-fit: cover;
     opacity: 0; /* Start with all images hidden */
     transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+@keyframes slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animated-element {
+    animation: slide-top 300ms ease-in-out backwards;
 }
 </style>

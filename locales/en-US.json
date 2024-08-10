@@ -39,6 +39,7 @@
     },
 
     "home_hero_title": {
+        "hero_text": "Crafting Beautiful Spaces since 2004",
         "mainText": "Crafting beautiful",
         "words": {
             "kitchens": "kitchens",
@@ -96,7 +97,7 @@
     "home_cta": {
         "title": "Have an idea?",
         "description": "Let's create your dream interior together.",
-        "btn": "Contact"
+        "btn": "Contact us"
     },
 
     "pages": {

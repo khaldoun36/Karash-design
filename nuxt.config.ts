@@ -10,6 +10,8 @@ export default defineNuxtConfig({
         '@nuxt/content',
     ],
 
+    css: ['@fontsource-variable/playfair-display'],
+
     // Internationalization Routing Options
     i18n: {
         lazy: true,

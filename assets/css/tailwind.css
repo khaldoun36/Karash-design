@@ -24,12 +24,24 @@
 :root {
     font-family: 'Inter', sans-serif;
     color-scheme: dark;
+    scroll-behavior: smooth;
 }
 @supports (font-variation-settings: normal) {
     :root {
         font-family: 'InterVariable', sans-serif;
         font-optical-sizing: auto;
     }
+}
+
+/* Heading Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display Variable', serif;
+    font-weight: 200 !important;
 }
 
 /* ******* */
@@ -75,7 +87,47 @@
 }
 
 body {
-    background-color: theme('colors.secondary.900');
+    background-color: theme('colors.white');
 }
 
+/* Shadow */
+:root {
+    --base: hsl(var(--tint, 214) 80% 27% / calc(var(--alpha, 4) * 1%));
+    /**
+      * Use relative syntax to get to: hsl(221 25% 22% / 40%)
+    */
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+    --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
+        0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
+        0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
+}
 
+img {
+    box-shadow: var(--perfect-shadow) !important;
+}
+
+.perfect-shadow {
+    --base: hsl(var(--tint, 214) 80% 27% / calc(var(--alpha, 1) * 1%));
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+    --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
+        0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
+        0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
+
+    box-shadow: var(--perfect-shadow) !important;
+}
+
+/* Text Animation */
+@keyframes slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+h1 {
+    animation: slide-top 300ms ease-in-out backwards !important;
+}

@@ -43,7 +43,7 @@ const store = useIsMenuActive();
         inset: 0;
         max-height: 0;
         flex-direction: column;
-        gap: theme('spacing.10');
+        gap: theme('spacing.14');
         align-items: start;
         justify-content: start;
 
@@ -60,9 +60,9 @@ const store = useIsMenuActive();
         min-height: 100vh;
         z-index: -1;
 
-        -webkit-backdrop-filter: blur(theme('backdropBlur.md'));
-        backdrop-filter: blur(theme('backdropBlur.md'));
-        background-color: theme('colors.secondary.800/60%');
+        /* -webkit-backdrop-filter: blur(theme('backdropBlur.md')); */
+        /* backdrop-filter: blur(theme('backdropBlur.md')); */
+        background-color: theme('colors.white');
     }
 
     .mobile-nav.active {
@@ -72,9 +72,9 @@ const store = useIsMenuActive();
     .mobile-nav a {
         width: 100%;
         padding-inline: theme('spacing.8');
-        font-size: theme('fontSize.xl');
+        font-size: theme('fontSize.3xl');
         font-weight: theme('fontWeight.medium');
-        color: theme('colors.secondary.100');
+        color: theme('colors.secondary.600');
 
         transform: translateY(0);
         opacity: 0;

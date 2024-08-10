@@ -3,7 +3,7 @@
         class="full-width content-grid items-center justify-center space-y-5 pt-20 lg:pt-28"
     >
         <h2
-            class="text-center text-2xl font-semibold text-secondary-50 lg:text-4xl"
+            class="text-center text-2xl font-semibold text-secondary-800 lg:text-4xl"
         >
             {{ $t('home_partners') }}
         </h2>
