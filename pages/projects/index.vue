@@ -1,7 +1,7 @@
 <template>
     <main class="pb-16 pt-[184px]">
         <h1
-            class="lg:text-8xl mx-auto text-balance text-center text-5xl font-semibold text-secondary-800 md:max-w-[25ch]"
+            class="lg:text-8xl mx-auto text-balance text-center text-5xl font-semibold text-secondary-950 md:max-w-[25ch]"
         >
             {{ $t('pages.projects.title') }}
         </h1>

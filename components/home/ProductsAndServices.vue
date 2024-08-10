@@ -21,7 +21,7 @@
                             @click="handleClick(index)"
                         >
                             <h4
-                                class="text-balance text-start text-2xl font-semibold text-secondary-800 lg:text-3xl"
+                                class="text-balance text-start text-2xl font-semibold text-secondary-950 lg:text-3xl"
                             >
                                 {{ item.title }}
                             </h4>
@@ -32,7 +32,7 @@
                         </AccordionTrigger>
                     </AccordionHeader>
                     <AccordionContent
-                        class="AccordionContent text-base text-secondary-500"
+                        class="AccordionContent text-base text-secondary-800"
                     >
                         <div class="content">
                             <img
@@ -134,7 +134,7 @@ const handleClick = (index) => {
 }
 
 .morph-icon {
-    color: theme('colors.secondary.800');
+    color: theme('colors.secondary.950');
     width: 32px;
     height: 32px;
     border: 0;
@@ -145,7 +145,7 @@ const handleClick = (index) => {
 .morph-icon span {
     position: absolute;
     transition: 300ms;
-    background: theme('colors.secondary.800');
+    background: theme('colors.secondary.950');
     border-radius: 2px;
 }
 

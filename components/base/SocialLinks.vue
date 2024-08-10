@@ -3,21 +3,21 @@
         <NuxtLink
             to="https://www.facebook.com/karash.Kitchen/"
             target="_blank"
-            class="text-secondary-500 hover:text-secondary-800"
+            class="text-secondary-800 hover:text-secondary-950"
         >
             <Icon name="ant-design:facebook-outlined" :size="size" />
         </NuxtLink>
         <NuxtLink
             to="https://www.facebook.com/karash.Kitchen/"
             target="_blank"
-            class="text-secondary-500 hover:text-secondary-800"
+            class="text-secondary-800 hover:text-secondary-950"
         >
             <Icon name="ant-design:instagram-outlined" :size="size" />
         </NuxtLink>
         <NuxtLink
             to="https://www.facebook.com/karash.Kitchen/"
             target="_blank"
-            class="text-secondary-500 hover:text-secondary-800"
+            class="text-secondary-800 hover:text-secondary-950"
         >
             <Icon name="ant-design:linkedin-outlined" :size="size" />
         </NuxtLink>

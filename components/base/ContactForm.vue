@@ -5,24 +5,24 @@
         >
             <div class="contact-details flex flex-col gap-2.5">
                 <h2
-                    class="mb-1.5 text-base font-semibold text-secondary-800 lg:text-lg"
+                    class="mb-1.5 text-base font-semibold text-secondary-950 lg:text-lg"
                 >
                     {{ $t('shared.form.title') }}
                 </h2>
                 <NuxtLink
                     to="mailto:mainbranch@karash.com"
-                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-800 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-950 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-500"
+                    <span class="font-normal text-secondary-800"
                         >{{ $t('shared.form.email') }}:</span
                     >
                     <span class="mr-12"> mainbranch@karash.com</span>
                 </NuxtLink>
                 <NuxtLink
                     to="tel:009647503520001"
-                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-800 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-950 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-500"
+                    <span class="font-normal text-secondary-800"
                         >{{ $t('shared.form.phone') }}:</span
                     >
                     <span
@@ -36,9 +36,9 @@
                 </NuxtLink>
                 <NuxtLink
                     to="tel:+9647504453841"
-                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-800 lg:text-lg"
+                    class="contact-link flex items-center justify-between whitespace-nowrap text-base font-medium text-secondary-950 lg:text-lg"
                 >
-                    <span class="font-normal text-secondary-500"
+                    <span class="font-normal text-secondary-800"
                         >{{ $t('shared.form.phone') }}:</span
                     >
                     <span
@@ -53,12 +53,12 @@
             </div>
             <div class="dministrative-hours flex flex-col gap-2.5">
                 <h2
-                    class="mb-1.5 text-base font-semibold text-secondary-800 lg:text-lg"
+                    class="mb-1.5 text-base font-semibold text-secondary-950 lg:text-lg"
                 >
                     {{ $t('shared.form.hours') }}
                 </h2>
-                <p class="text-base font-medium text-secondary-800 lg:text-lg">
-                    <span class="font-normal text-secondary-500"
+                <p class="text-base font-medium text-secondary-950 lg:text-lg">
+                    <span class="font-normal text-secondary-800"
                         >{{ $t('shared.form.days') }}:</span
                     >
                     {{ $t('shared.form.time') }}

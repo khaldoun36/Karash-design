@@ -64,14 +64,17 @@ onMounted(() => {
 }
 
 .header_root.active nav > * {
-    color: theme('colors.secondary.600/80%') !important;
-}
-
-.header_root.active nav > *:hover {
     color: theme('colors.secondary.800') !important;
 }
 
+.header_root.active nav > *:hover {
+    color: theme('colors.secondary.950') !important;
+}
+
 .header_root.active .language-select > * {
-    color: theme('colors.secondary.600/80%') !important;
+    color: theme('colors.secondary.800') !important;
+}
+.header_root.active .header-layout .header-cta .hamburger .line .line-inner {
+    background: red !important;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <section class="space-y-16 py-20 lg:py-28">
-        <h2 class="text-3xl font-semibold text-secondary-800 lg:text-5xl">
+        <h2 class="text-3xl font-semibold text-secondary-950 lg:text-5xl">
             {{ $t('pages.about.sections.guidingPrinciples.title') }}
         </h2>
         <AccordionRoot
@@ -20,7 +20,7 @@
                             style="grid-template-columns: 1fr 24px"
                         >
                             <h4
-                                class="text-balance text-start text-2xl font-semibold text-secondary-800 lg:text-3xl"
+                                class="text-balance text-start text-2xl font-semibold text-secondary-950 lg:text-3xl"
                             >
                                 {{ item.title }}
                             </h4>
@@ -31,7 +31,7 @@
                         </AccordionTrigger>
                     </AccordionHeader>
                     <AccordionContent
-                        class="AccordionContent mt-8 flex flex-col items-end gap-6 text-base text-secondary-500"
+                        class="AccordionContent mt-8 flex flex-col items-end gap-6 text-base text-secondary-800"
                     >
                         <p
                             class="max-w-[45ch]"
@@ -129,7 +129,7 @@ const accordionItems = [
 }
 
 .morph-icon {
-    color: theme('colors.secondary.800');
+    color: theme('colors.secondary.950');
     width: 32px;
     height: 32px;
     border: 0;
@@ -140,7 +140,7 @@ const accordionItems = [
 .morph-icon span {
     position: absolute;
     transition: 300ms;
-    background: theme('colors.secondary.800');
+    background: theme('colors.secondary.950');
     border-radius: 2px;
 }
 

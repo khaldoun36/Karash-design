@@ -1,34 +1,34 @@
 <template>
     <div class="achievements relative grid grid-cols-2 grid-rows-2 gap-8">
         <div class="flex flex-col items-start gap-3 py-8">
-            <p class="lg:text-7xl text-5xl font-extralight text-secondary-800">
+            <p class="lg:text-7xl text-5xl font-extralight text-secondary-950">
                 100+
             </p>
-            <p class="text-base text-secondary-500">
+            <p class="text-base text-secondary-800">
                 {{ $t('home_about.grid_titles.successful_projects') }}
             </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8 pl-8">
-            <p class="lg:text-7xl text-5xl font-extralight text-secondary-800">
+            <p class="lg:text-7xl text-5xl font-extralight text-secondary-950">
                 {{ yearsOfExperience }}
             </p>
-            <p class="text-base text-secondary-500">
+            <p class="text-base text-secondary-800">
                 {{ $t('home_about.grid_titles.years-of-experience') }}
             </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8">
-            <p class="lg:text-7xl text-5xl font-extralight text-secondary-800">
+            <p class="lg:text-7xl text-5xl font-extralight text-secondary-950">
                 9
             </p>
-            <p class="text-base text-secondary-500">
+            <p class="text-base text-secondary-800">
                 {{ $t('home_about.grid_titles.locations-across-iraq') }}
             </p>
         </div>
         <div class="flex flex-col items-start gap-3 py-8 pl-8">
-            <p class="lg:text-7xl text-5xl font-extralight text-secondary-800">
+            <p class="lg:text-7xl text-5xl font-extralight text-secondary-950">
                 100%
             </p>
-            <p class="text-base text-secondary-500">
+            <p class="text-base text-secondary-800">
                 {{ $t('home_about.grid_titles.satisfaction-rate') }}
             </p>
         </div>
@@ -58,7 +58,7 @@ let yearsOfExperience = currentYear.value - yearFounded;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Adjust for the element's own size */
-    background-color: theme('colors.secondary.800');
+    background-color: theme('colors.secondary.950');
 }
 
 .h-line {
@@ -75,6 +75,6 @@ let yearsOfExperience = currentYear.value - yearFounded;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Adjust for the element's own size */
-    color: theme('colors.secondary.800');
+    color: theme('colors.secondary.950');
 }
 </style>

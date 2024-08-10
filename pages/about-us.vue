@@ -20,18 +20,18 @@
     </main>
     <section class="grid gap-8 py-20 md:grid-cols-2 lg:py-28">
         <h2
-            class="text-balance text-3xl font-semibold text-secondary-800 lg:text-5xl"
+            class="text-balance text-3xl font-semibold text-secondary-950 lg:text-5xl"
         >
             {{ $t('pages.about.sections.whoWeAre.title') }}
         </h2>
         <div class="text-container space-y-6">
-            <p class="text-base text-secondary-500 lg:text-lg">
+            <p class="text-base text-secondary-800 lg:text-lg">
                 {{ $t('pages.about.sections.whoWeAre.paragraphOne') }}
             </p>
-            <p class="text-base text-secondary-500 lg:text-lg">
+            <p class="text-base text-secondary-800 lg:text-lg">
                 {{ $t('pages.about.sections.whoWeAre.paragraphTwo') }}
             </p>
-            <p class="text-base text-secondary-500 lg:text-lg">
+            <p class="text-base text-secondary-800 lg:text-lg">
                 {{ $t('pages.about.sections.whoWeAre.paragraphThree') }}
             </p>
         </div>

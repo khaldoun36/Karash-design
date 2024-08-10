@@ -74,7 +74,7 @@ const store = useIsMenuActive();
         padding-inline: theme('spacing.8');
         font-size: theme('fontSize.3xl');
         font-weight: theme('fontWeight.medium');
-        color: theme('colors.secondary.600');
+        color: theme('colors.secondary.950');
 
         transform: translateY(0);
         opacity: 0;

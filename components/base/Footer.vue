@@ -6,7 +6,7 @@
             <KarashLogo class="max-w-min" />
         </NuxtLink>
 
-        <p class="text-base font-medium text-secondary-500">
+        <p class="text-base font-medium text-secondary-800">
             All rights reserved &copy; {{ new Date().getFullYear() }}
         </p>
         <SocialLinks size="32px" />

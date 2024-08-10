@@ -1,6 +1,6 @@
 <template>
     <section class="locations space-y-16 py-20 lg:py-28">
-        <h2 class="text-3xl font-semibold text-secondary-800 lg:text-5xl">
+        <h2 class="text-3xl font-semibold text-secondary-950 lg:text-5xl">
             {{ $t('home_locations.title_1') }} <br />{{
                 $t('home_locations.title_2')
             }}

@@ -14,7 +14,7 @@
             >
                 <NuxtLink :to="normalizePath(article._path)" class="block">
                     <article
-                        class="group relative flex aspect-video min-w-full cursor-pointer items-end object-cover"
+                        class="group relative flex aspect-[5/4] min-w-full cursor-pointer items-end object-cover lg:aspect-video"
                     >
                         <NuxtImg
                             :src="article.thumbnail"
@@ -159,11 +159,11 @@ onMounted(() => {
     margin-inline: theme('spacing.4');
     border-radius: 100%;
     cursor: pointer;
-    background: theme('colors.secondary.600');
+    background: theme('colors.secondary.300');
 }
 
 :global(.swiper-pagination-bullet-active) {
-    background: theme('colors.secondary.900');
+    background: theme('colors.secondary.500/80%');
 }
 
 @media screen and (min-width: 768px) {
