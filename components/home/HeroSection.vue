@@ -9,9 +9,11 @@
             <video
                 ref="videoBG"
                 :src="videoSource"
-                loop="true"
-                autoplay="autoplay"
+                loop
+                autoplay
                 muted
+                playsinline
+                preload="auto"
                 class="h-full w-full object-cover brightness-[60%]"
                 id="videoBG"
             />
@@ -33,6 +35,18 @@ import videoSource from '~/assets/bgVideo.mp4';
 
 onMounted(() => {
     videoBG.value.playbackRate = 0.65;
+
+    // Attempt to play the video
+    const playVideo = async () => {
+        try {
+            await videoBG.value.play();
+        } catch (err) {
+            console.log('Autoplay was prevented:', err);
+            // You could implement a play button here as a fallback
+        }
+    };
+
+    playVideo();
 });
 </script>
 
