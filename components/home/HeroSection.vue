@@ -9,8 +9,8 @@
             <video
                 ref="videoBG"
                 :src="videoSource"
-                autoplay
-                loop
+                loop="true"
+                autoplay="autoplay"
                 muted
                 class="h-full w-full object-cover brightness-[60%]"
                 id="videoBG"
